@@ -54,14 +54,11 @@ namespace WindowsFormsApp1
                 $"INSERT INTO [Students] (Name, Birthday, Graduation) VALUES (@Name, @Birthday, @Graduation)", sqlConnection);
 
             //Заполнение БД
-           
-            string validformat = "dd/MM/yyyy";
 
-            CultureInfo provider = new CultureInfo("ru_RU");
-            DateTime date = DateTime.ParseExact(textBox2.Text, validformat, provider);
+            //string validformat = "dd-MM-yyyy";
 
             command.Parameters.AddWithValue("Name", textBox1.Text);
-            command.Parameters.AddWithValue("Birthday", $"{date.Day}/{date.Month}/{date.Year}");
+            command.Parameters.AddWithValue("Birthday", $"{dateTimePicker1.Value.Day}/{dateTimePicker1.Value.Month}/{dateTimePicker1.Value.Year}");
             command.Parameters.AddWithValue("Graduation", textBox3.Text);
 
             //Уведомление о количестве заполненных строк
@@ -146,5 +143,9 @@ namespace WindowsFormsApp1
             (dataGridView2.DataSource as DataTable).DefaultView.RowFilter = string.Format($"Convert(id, 'System.String') LIKE '%{textBox5.Text}%' AND Name LIKE '%{textBox6.Text}%' AND Convert(id, 'System.String') LIKE '%{textBox5.Text}%' AND Convert(Birthday, 'System.String') LIKE '%{textBox7.Text}%' AND Convert(Graduation, 'System.String') LIKE '%{textBox8.Text}%'");
         }
 
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

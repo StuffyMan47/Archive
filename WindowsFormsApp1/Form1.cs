@@ -9,6 +9,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Configuration;
+using ExcelDataReader;
+using System.IO;
 
 namespace WindowsFormsApp1
 {
@@ -155,6 +157,63 @@ namespace WindowsFormsApp1
             SqlCommand sort = new SqlCommand("SELECT id FROM Students ORDER BY id DESC", sqlConnection);
             int Add_id = Convert.ToInt32(sort.ExecuteScalar()) + 1;
             textBox9.Text = Convert.ToString(Add_id);
+        }
+
+        //Чтение файла Excel
+        private string excelFileName = string.Empty;
+
+        private DataTableCollection excelTableCollection = null;
+
+        private void открытьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DialogResult dialogResult = openFileDialog1.ShowDialog();
+
+                if (dialogResult == DialogResult.OK)
+                {
+                    excelFileName = openFileDialog1.FileName;
+                    Text = excelFileName;
+                    OpenExcelFile(excelFileName);
+                }
+                else
+                {
+                    throw new Exception("Файл не выбран");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void OpenExcelFile(string path)
+        {
+            FileStream stream = File.Open(path, FileMode.Open, FileAccess.Read);
+            IExcelDataReader reader = ExcelReaderFactory.CreateReader(stream);
+            DataSet excelDB = reader.AsDataSet(new ExcelDataSetConfiguration
+            {
+                ConfigureDataTable = (x) => new ExcelDataTableConfiguration()
+                {
+                    UseHeaderRow = true
+                }
+            });
+
+            excelTableCollection = excelDB.Tables;
+            toolStripComboBox1.Items.Clear();
+
+            foreach (DataTable table in excelTableCollection)
+            {
+                toolStripComboBox1.Items.Add(table.TableName);
+            }
+
+            toolStripComboBox1.SelectedIndex = 0;
+        }
+
+        private void toolStripComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DataTable table = excelTableCollection[Convert.ToString(toolStripComboBox1.SelectedItem)];
+            dataGridView3.DataSource = table;
         }
     }
 }

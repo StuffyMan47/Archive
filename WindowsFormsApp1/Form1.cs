@@ -38,7 +38,7 @@ namespace WindowsFormsApp1
             }
             else { MessageBox.Show("Ошибка в подключении БД"); }
 
-            SqlDataAdapter dataAdapter = new SqlDataAdapter("SELECT * FROM Students", sqlConnection);
+            SqlDataAdapter dataAdapter = new SqlDataAdapter("SELECT * FROM KGEU_Diploma", sqlConnection);
 
             DataSet db = new DataSet();
 
@@ -95,10 +95,11 @@ namespace WindowsFormsApp1
 
                 while (dataReader.Read())
                 {
-                    item = new ListViewItem(new string[] { Convert.ToString(dataReader["ID"]), 
+                    item = new ListViewItem(new string[] {
+                        Convert.ToString(dataReader["Diploma_RN"]), 
                         Convert.ToString(dataReader["Name"]), 
-                        Convert.ToString(dataReader["Birthday"]), 
-                        Convert.ToString(dataReader["Graduation"]) });
+                        Convert.ToString(dataReader["diplomaForm_SN"]), 
+                        Convert.ToString(dataReader[""]) });
 
                     listView1.Items.Add(item);
                 }
@@ -143,7 +144,7 @@ namespace WindowsFormsApp1
             (dataGridView2.DataSource as DataTable).DefaultView.RowFilter = string.Format($"Convert(id, 'System.String') LIKE '%{textBox5.Text}%' AND Name LIKE '%{textBox6.Text}%' AND Convert(id, 'System.String') LIKE '%{textBox5.Text}%' AND Convert(Birthday, 'System.String') LIKE '%{textBox7.Text}%' AND Convert(Graduation, 'System.String') LIKE '%{textBox8.Text}%'");
         }
 
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

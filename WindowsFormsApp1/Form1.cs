@@ -9,8 +9,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Configuration;
+using System.Globalization;
 using ExcelDataReader;
 using System.IO;
+
 
 namespace WindowsFormsApp1
 {
@@ -54,10 +56,11 @@ namespace WindowsFormsApp1
                 $"INSERT INTO [Students] (Name, Birthday, Graduation) VALUES (@Name, @Birthday, @Graduation)", sqlConnection);
 
             //Заполнение БД
-            DateTime date = DateTime.Parse(textBox2.Text);
+
+            //string validformat = "dd-MM-yyyy";
 
             command.Parameters.AddWithValue("Name", textBox1.Text);
-            command.Parameters.AddWithValue("Birthday", $"{date.Day}/{date.Month}/{date.Year}");
+            command.Parameters.AddWithValue("Birthday", $"{dateTimePicker1.Value.Day}/{dateTimePicker1.Value.Month}/{dateTimePicker1.Value.Year}");
             command.Parameters.AddWithValue("Graduation", textBox3.Text);
 
             //Уведомление о количестве заполненных строк
@@ -137,26 +140,14 @@ namespace WindowsFormsApp1
             (dataGridView2.DataSource as DataTable).DefaultView.RowFilter = string.Format($"Convert(id, 'System.String') LIKE '%{textBox5.Text}%' AND Name LIKE '%{textBox6.Text}%' AND Convert(id, 'System.String') LIKE '%{textBox5.Text}%' AND Convert(Birthday, 'System.String') LIKE '%{textBox7.Text}%' AND Convert(Graduation, 'System.String') LIKE '%{textBox8.Text}%'");
         }
 
-        //Вывод следующего индекса в странице "Добавить"
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void textBox9_TextChanged(object sender, EventArgs e)
         {
-            SqlCommand sort = new SqlCommand("SELECT id FROM Students ORDER BY id DESC", sqlConnection);
-            int Add_id = Convert.ToInt32(sort.ExecuteScalar())+1;
-            textBox9.Text = Convert.ToString(Add_id);
+            (dataGridView2.DataSource as DataTable).DefaultView.RowFilter = string.Format($"Convert(id, 'System.String') LIKE '%{textBox5.Text}%' AND Name LIKE '%{textBox6.Text}%' AND Convert(id, 'System.String') LIKE '%{textBox5.Text}%' AND Convert(Birthday, 'System.String') LIKE '%{textBox7.Text}%' AND Convert(Graduation, 'System.String') LIKE '%{textBox8.Text}%'");
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
-            SqlCommand sort = new SqlCommand("SELECT id FROM Students ORDER BY id DESC", sqlConnection);
-            int Add_id = Convert.ToInt32(sort.ExecuteScalar()) + 1;
-            textBox9.Text = Convert.ToString(Add_id);
-        }
 
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-            SqlCommand sort = new SqlCommand("SELECT id FROM Students ORDER BY id DESC", sqlConnection);
-            int Add_id = Convert.ToInt32(sort.ExecuteScalar()) + 1;
-            textBox9.Text = Convert.ToString(Add_id);
         }
 
         //Чтение файла Excel

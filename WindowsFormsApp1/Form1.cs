@@ -12,6 +12,7 @@ using System.Configuration;
 using System.Globalization;
 using ExcelDataReader;
 using System.IO;
+using  Excel = Microsoft.Office.Interop.Excel;
 
 
 namespace WindowsFormsApp1
@@ -177,7 +178,7 @@ namespace WindowsFormsApp1
                 MessageBox.Show(ex.Message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
+         
         private void OpenExcelFile(string path)
         {
             FileStream stream = File.Open(path, FileMode.Open, FileAccess.Read);
@@ -205,6 +206,24 @@ namespace WindowsFormsApp1
         {
             DataTable table = excelTableCollection[Convert.ToString(toolStripComboBox1.SelectedItem)];
             dataGridView3.DataSource = table;
+        }
+
+        //Создание Excel файла и заполнение через dataGridView2 (вкладка поиск)
+        private void Export_button_Click(object sender, EventArgs e)
+        {
+            Excel.Application excelApp = new Excel.Application();
+            excelApp.Workbooks.Add();
+            Excel.Worksheet ws = (Excel.Worksheet)excelApp.ActiveSheet;
+
+            for (int i=0; i<dataGridView2.RowCount-1; i++)
+            {
+                for (int j=0; j<dataGridView2.ColumnCount; j++)
+                {
+                    ws.Cells[i + 1, j + 1] = dataGridView2[j, i].Value.ToString();
+                }
+            }
+
+            excelApp.Visible = true;
         }
     }
 }

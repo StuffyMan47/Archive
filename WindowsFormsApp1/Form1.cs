@@ -12,7 +12,7 @@ using System.Configuration;
 using System.Globalization;
 using ExcelDataReader;
 using System.IO;
-using  Excel = Microsoft.Office.Interop.Excel;
+using Excel = Microsoft.Office.Interop.Excel;
 
 
 namespace WindowsFormsApp1
@@ -30,7 +30,7 @@ namespace WindowsFormsApp1
             this.Text = "Выпускники КГЭУ";
 
             //Подключение БД
-            sqlConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["Student"].ConnectionString);
+            sqlConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["studName"].ConnectionString);
 
             sqlConnection.Open();
 
@@ -41,7 +41,7 @@ namespace WindowsFormsApp1
             }
             else { MessageBox.Show("Ошибка в подключении БД"); }
 
-            SqlDataAdapter dataAdapter = new SqlDataAdapter("SELECT * FROM Students", sqlConnection);
+            SqlDataAdapter dataAdapter = new SqlDataAdapter("SELECT * FROM KGEU_Diploma", sqlConnection);
 
             DataSet db = new DataSet();
 

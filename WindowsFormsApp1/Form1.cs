@@ -60,9 +60,9 @@ namespace WindowsFormsApp1
 
             //string validformat = "dd-MM-yyyy";
 
-            command.Parameters.AddWithValue("Name", textBox1.Text);
-            command.Parameters.AddWithValue("Birthday", $"{dateTimePicker1.Value.Day}/{dateTimePicker1.Value.Month}/{dateTimePicker1.Value.Year}");
-            command.Parameters.AddWithValue("Graduation", textBox3.Text);
+            command.Parameters.AddWithValue("Name", stud_name_textBoxAdd.Text);
+            command.Parameters.AddWithValue("Birthday", $"{diploma_issue_dateTimePickerAdd.Value.Day}/{diploma_issue_dateTimePickerAdd.Value.Month}/{diploma_issue_dateTimePickerAdd.Value.Year}");
+            command.Parameters.AddWithValue("Graduation", diplomaForm_SN_textBoxAdd.Text);
 
             //Уведомление о количестве заполненных строк
             MessageBox.Show(command.ExecuteNonQuery().ToString());
@@ -97,34 +97,44 @@ namespace WindowsFormsApp1
 
         //Фильтрация
         //Оброботчики события изменения текста в полях.(При изменении текста в любом из полей запускается фильтрация по заполненным полям)
-        private void textBox5_TextChanged(object sender, EventArgs e)
+        //private void textBox5_TextChanged(object sender, EventArgs e)
+        //{
+          //  (dataGridView2.DataSource as DataTable).DefaultView.RowFilter = string.Format($"Convert(id, 'System.String') LIKE '%{traningDN_textBoxS.Text}%' AND Name LIKE '%{passport_textBoxS.Text}%' AND Convert(id, 'System.String') LIKE '%{traningDN_textBoxS.Text}%' AND Convert(Birthday, 'System.String') LIKE '%{assignedQualification_Name_textBoxS.Text}%' AND Convert(Graduation, 'System.String') LIKE '%{traningDC_textBoxS.Text}%'");
+        //}
+
+        private void diploma_RN_textBoxS_TextChanged(object sender, EventArgs e)
         {
-            (dataGridView2.DataSource as DataTable).DefaultView.RowFilter = string.Format($"Convert(id, 'System.String') LIKE '%{textBox5.Text}%' AND Name LIKE '%{textBox6.Text}%' AND Convert(id, 'System.String') LIKE '%{textBox5.Text}%' AND Convert(Birthday, 'System.String') LIKE '%{textBox7.Text}%' AND Convert(Graduation, 'System.String') LIKE '%{textBox8.Text}%'");
+            (dataGridView2.DataSource as DataTable).DefaultView.RowFilter = string.Format($"diploma_RN LIKE '%{diploma_RN_textBoxS.Text}%' AND studName LIKE '%{stud_name_textBoxS.Text}%' AND trainingDirection_code LIKE '%{traningDC_textBoxS.Text}%' AND trainingDirection_Name LIKE '%{traningDN_textBoxS.Text}%' AND assignedQualification_Name LIKE '%{assignedQualification_Name_textBoxS.Text}%' AND passport LIKE '%{passport_textBoxS.Text}%'");
         }
 
-        private void textBox6_TextChanged(object sender, EventArgs e)
+        private void stud_name_textBoxS_TextChanged(object sender, EventArgs e)
         {
-            (dataGridView2.DataSource as DataTable).DefaultView.RowFilter = string.Format($"Convert(id, 'System.String') LIKE '%{textBox5.Text}%' AND Name LIKE '%{textBox6.Text}%' AND Convert(id, 'System.String') LIKE '%{textBox5.Text}%' AND Convert(Birthday, 'System.String') LIKE '%{textBox7.Text}%' AND Convert(Graduation, 'System.String') LIKE '%{textBox8.Text}%'");
+            (dataGridView2.DataSource as DataTable).DefaultView.RowFilter = string.Format($"diploma_RN LIKE '%{diploma_RN_textBoxS.Text}%' AND studName LIKE '%{stud_name_textBoxS.Text}%' AND trainingDirection_code LIKE '%{traningDC_textBoxS.Text}%' AND trainingDirection_Name LIKE '%{traningDN_textBoxS.Text}%' AND assignedQualification_Name LIKE '%{assignedQualification_Name_textBoxS.Text}%' AND passport LIKE '%{passport_textBoxS.Text}%'");
         }
 
-        private void textBox7_TextChanged(object sender, EventArgs e)
+        private void traningDC_textBoxS_TextChanged(object sender, EventArgs e)
         {
-            (dataGridView2.DataSource as DataTable).DefaultView.RowFilter = string.Format($"Convert(id, 'System.String') LIKE '%{textBox5.Text}%' AND Name LIKE '%{textBox6.Text}%' AND Convert(id, 'System.String') LIKE '%{textBox5.Text}%' AND Convert(Birthday, 'System.String') LIKE '%{textBox7.Text}%' AND Convert(Graduation, 'System.String') LIKE '%{textBox8.Text}%'");
+            (dataGridView2.DataSource as DataTable).DefaultView.RowFilter = string.Format($"diploma_RN LIKE '%{diploma_RN_textBoxS.Text}%' AND studName LIKE '%{stud_name_textBoxS.Text}%' AND trainingDirection_code LIKE '%{traningDC_textBoxS.Text}%' AND trainingDirection_Name LIKE '%{traningDN_textBoxS.Text}%' AND assignedQualification_Name LIKE '%{assignedQualification_Name_textBoxS.Text}%' AND passport LIKE '%{passport_textBoxS.Text}%'");
         }
 
-        private void textBox8_TextChanged(object sender, EventArgs e)
+        private void traningDN_textBoxS_TextChanged(object sender, EventArgs e)
         {
-            (dataGridView2.DataSource as DataTable).DefaultView.RowFilter = string.Format($"Convert(id, 'System.String') LIKE '%{textBox5.Text}%' AND Name LIKE '%{textBox6.Text}%' AND Convert(id, 'System.String') LIKE '%{textBox5.Text}%' AND Convert(Birthday, 'System.String') LIKE '%{textBox7.Text}%' AND Convert(Graduation, 'System.String') LIKE '%{textBox8.Text}%'");
+            (dataGridView2.DataSource as DataTable).DefaultView.RowFilter = string.Format($"diploma_RN LIKE '%{diploma_RN_textBoxS.Text}%' AND studName LIKE '%{stud_name_textBoxS.Text}%' AND trainingDirection_code LIKE '%{traningDC_textBoxS.Text}%' AND trainingDirection_Name LIKE '%{traningDN_textBoxS.Text}%' AND assignedQualification_Name LIKE '%{assignedQualification_Name_textBoxS.Text}%' AND passport LIKE '%{passport_textBoxS.Text}%'");
         }
 
-        private void textBox9_TextChanged(object sender, EventArgs e)
+        private void assignedQualification_Name_textBoxS_TextChanged(object sender, EventArgs e)
         {
-            (dataGridView2.DataSource as DataTable).DefaultView.RowFilter = string.Format($"Convert(id, 'System.String') LIKE '%{textBox5.Text}%' AND Name LIKE '%{textBox6.Text}%' AND Convert(id, 'System.String') LIKE '%{textBox5.Text}%' AND Convert(Birthday, 'System.String') LIKE '%{textBox7.Text}%' AND Convert(Graduation, 'System.String') LIKE '%{textBox8.Text}%'");
+            (dataGridView2.DataSource as DataTable).DefaultView.RowFilter = string.Format($"diploma_RN LIKE '%{diploma_RN_textBoxS.Text}%' AND studName LIKE '%{stud_name_textBoxS.Text}%' AND trainingDirection_code LIKE '%{traningDC_textBoxS.Text}%' AND trainingDirection_Name LIKE '%{traningDN_textBoxS.Text}%' AND assignedQualification_Name LIKE '%{assignedQualification_Name_textBoxS.Text}%' AND passport LIKE '%{passport_textBoxS.Text}%'");
         }
 
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        private void honors_comboBoxS_SelectionChangeCommitted(object sender, EventArgs e)
         {
+            (dataGridView2.DataSource as DataTable).DefaultView.RowFilter = string.Format($"diploma_RN LIKE '%{diploma_RN_textBoxS.Text}%' AND studName LIKE '%{stud_name_textBoxS.Text}%' AND trainingDirection_code LIKE '%{traningDC_textBoxS.Text}%' AND trainingDirection_Name LIKE '%{traningDN_textBoxS.Text}%' AND assignedQualification_Name LIKE '%{assignedQualification_Name_textBoxS.Text}%' AND passport LIKE '%{passport_textBoxS.Text}%'");
+        }
 
+        private void passport_textBoxS_TextChanged(object sender, EventArgs e)
+        {
+            (dataGridView2.DataSource as DataTable).DefaultView.RowFilter = string.Format($"diploma_RN LIKE '%{diploma_RN_textBoxS.Text}%' AND studName LIKE '%{stud_name_textBoxS.Text}%' AND trainingDirection_code LIKE '%{traningDC_textBoxS.Text}%' AND trainingDirection_Name LIKE '%{traningDN_textBoxS.Text}%' AND assignedQualification_Name LIKE '%{assignedQualification_Name_textBoxS.Text}%' AND passport LIKE '%{passport_textBoxS.Text}%'");
         }
 
         //Чтение файла Excel

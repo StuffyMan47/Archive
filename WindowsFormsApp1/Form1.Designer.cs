@@ -30,17 +30,17 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.traningDN_textBoxAdd = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.managment_signature_comboBoxAdd = new System.Windows.Forms.ComboBox();
+            this.student_signature_comboBoxAdd = new System.Windows.Forms.ComboBox();
+            this.passport_textBoxAdd = new System.Windows.Forms.TextBox();
+            this.graduationExplusionOrder_Date_textBoxAdd = new System.Windows.Forms.TextBox();
+            this.stateCommissionProtocol_Date_textBoxAdd = new System.Windows.Forms.TextBox();
+            this.honors_comboBoxAdd = new System.Windows.Forms.ComboBox();
+            this.assignedQualification_Name_textBoxAdd = new System.Windows.Forms.TextBox();
+            this.traningDC_textBoxAdd = new System.Windows.Forms.TextBox();
+            this.diploma_sup_form_SN_textBoxAdd = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
@@ -50,32 +50,32 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.diploma_issue_dateTimePickerAdd = new System.Windows.Forms.DateTimePicker();
+            this.diploma_RN_textBoxAdd = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.add_student_button = new System.Windows.Forms.Button();
+            this.diplomaForm_SN_textBoxAdd = new System.Windows.Forms.TextBox();
+            this.stud_name_textBoxAdd = new System.Windows.Forms.TextBox();
             this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.traningDN_textBoxS = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.passport_textBoxS = new System.Windows.Forms.TextBox();
+            this.honors_comboBoxS = new System.Windows.Forms.ComboBox();
+            this.assignedQualification_Name_textBoxS = new System.Windows.Forms.TextBox();
+            this.traningDC_textBoxS = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.diploma_issue_dateTimePickerS = new System.Windows.Forms.DateTimePicker();
+            this.diploma_RN_textBoxS = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
-            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.stud_name_textBoxS = new System.Windows.Forms.TextBox();
             this.Export_button = new System.Windows.Forms.Button();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.tabPage5 = new System.Windows.Forms.TabPage();
@@ -129,17 +129,17 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.White;
-            this.tabPage1.Controls.Add(this.textBox15);
+            this.tabPage1.Controls.Add(this.traningDN_textBoxAdd);
             this.tabPage1.Controls.Add(this.label17);
-            this.tabPage1.Controls.Add(this.comboBox3);
-            this.tabPage1.Controls.Add(this.comboBox2);
-            this.tabPage1.Controls.Add(this.textBox14);
-            this.tabPage1.Controls.Add(this.textBox13);
-            this.tabPage1.Controls.Add(this.textBox12);
-            this.tabPage1.Controls.Add(this.comboBox1);
-            this.tabPage1.Controls.Add(this.textBox11);
-            this.tabPage1.Controls.Add(this.textBox10);
-            this.tabPage1.Controls.Add(this.textBox2);
+            this.tabPage1.Controls.Add(this.managment_signature_comboBoxAdd);
+            this.tabPage1.Controls.Add(this.student_signature_comboBoxAdd);
+            this.tabPage1.Controls.Add(this.passport_textBoxAdd);
+            this.tabPage1.Controls.Add(this.graduationExplusionOrder_Date_textBoxAdd);
+            this.tabPage1.Controls.Add(this.stateCommissionProtocol_Date_textBoxAdd);
+            this.tabPage1.Controls.Add(this.honors_comboBoxAdd);
+            this.tabPage1.Controls.Add(this.assignedQualification_Name_textBoxAdd);
+            this.tabPage1.Controls.Add(this.traningDC_textBoxAdd);
+            this.tabPage1.Controls.Add(this.diploma_sup_form_SN_textBoxAdd);
             this.tabPage1.Controls.Add(this.label21);
             this.tabPage1.Controls.Add(this.label16);
             this.tabPage1.Controls.Add(this.label15);
@@ -149,15 +149,15 @@
             this.tabPage1.Controls.Add(this.label11);
             this.tabPage1.Controls.Add(this.label10);
             this.tabPage1.Controls.Add(this.label9);
-            this.tabPage1.Controls.Add(this.dateTimePicker1);
-            this.tabPage1.Controls.Add(this.textBox9);
+            this.tabPage1.Controls.Add(this.diploma_issue_dateTimePickerAdd);
+            this.tabPage1.Controls.Add(this.diploma_RN_textBoxAdd);
             this.tabPage1.Controls.Add(this.label8);
             this.tabPage1.Controls.Add(this.label7);
             this.tabPage1.Controls.Add(this.label6);
             this.tabPage1.Controls.Add(this.label5);
-            this.tabPage1.Controls.Add(this.button1);
-            this.tabPage1.Controls.Add(this.textBox3);
-            this.tabPage1.Controls.Add(this.textBox1);
+            this.tabPage1.Controls.Add(this.add_student_button);
+            this.tabPage1.Controls.Add(this.diplomaForm_SN_textBoxAdd);
+            this.tabPage1.Controls.Add(this.stud_name_textBoxAdd);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -165,12 +165,12 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Добавить";
             // 
-            // textBox15
+            // traningDN_textBoxAdd
             // 
-            this.textBox15.Location = new System.Drawing.Point(316, 184);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(162, 20);
-            this.textBox15.TabIndex = 35;
+            this.traningDN_textBoxAdd.Location = new System.Drawing.Point(316, 188);
+            this.traningDN_textBoxAdd.Name = "traningDN_textBoxAdd";
+            this.traningDN_textBoxAdd.Size = new System.Drawing.Size(162, 20);
+            this.traningDN_textBoxAdd.TabIndex = 35;
             // 
             // label17
             // 
@@ -181,83 +181,83 @@
             this.label17.TabIndex = 34;
             this.label17.Text = "Наименование направления подготовки";
             // 
-            // comboBox3
+            // managment_signature_comboBoxAdd
             // 
-            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.managment_signature_comboBoxAdd.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.managment_signature_comboBoxAdd.FormattingEnabled = true;
+            this.managment_signature_comboBoxAdd.Items.AddRange(new object[] {
             "Имеется",
             "Остутсвует"});
-            this.comboBox3.Location = new System.Drawing.Point(316, 385);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(162, 21);
-            this.comboBox3.TabIndex = 33;
+            this.managment_signature_comboBoxAdd.Location = new System.Drawing.Point(316, 385);
+            this.managment_signature_comboBoxAdd.Name = "managment_signature_comboBoxAdd";
+            this.managment_signature_comboBoxAdd.Size = new System.Drawing.Size(162, 21);
+            this.managment_signature_comboBoxAdd.TabIndex = 33;
             // 
-            // comboBox2
+            // student_signature_comboBoxAdd
             // 
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.student_signature_comboBoxAdd.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.student_signature_comboBoxAdd.FormattingEnabled = true;
+            this.student_signature_comboBoxAdd.Items.AddRange(new object[] {
             "Имеется",
             "Остутсвует"});
-            this.comboBox2.Location = new System.Drawing.Point(316, 358);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(162, 21);
-            this.comboBox2.TabIndex = 32;
+            this.student_signature_comboBoxAdd.Location = new System.Drawing.Point(316, 358);
+            this.student_signature_comboBoxAdd.Name = "student_signature_comboBoxAdd";
+            this.student_signature_comboBoxAdd.Size = new System.Drawing.Size(162, 21);
+            this.student_signature_comboBoxAdd.TabIndex = 32;
             // 
-            // textBox14
+            // passport_textBoxAdd
             // 
-            this.textBox14.Location = new System.Drawing.Point(316, 332);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(162, 20);
-            this.textBox14.TabIndex = 31;
+            this.passport_textBoxAdd.Location = new System.Drawing.Point(316, 332);
+            this.passport_textBoxAdd.Name = "passport_textBoxAdd";
+            this.passport_textBoxAdd.Size = new System.Drawing.Size(162, 20);
+            this.passport_textBoxAdd.TabIndex = 31;
             // 
-            // textBox13
+            // graduationExplusionOrder_Date_textBoxAdd
             // 
-            this.textBox13.Location = new System.Drawing.Point(316, 306);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(162, 20);
-            this.textBox13.TabIndex = 30;
+            this.graduationExplusionOrder_Date_textBoxAdd.Location = new System.Drawing.Point(316, 306);
+            this.graduationExplusionOrder_Date_textBoxAdd.Name = "graduationExplusionOrder_Date_textBoxAdd";
+            this.graduationExplusionOrder_Date_textBoxAdd.Size = new System.Drawing.Size(162, 20);
+            this.graduationExplusionOrder_Date_textBoxAdd.TabIndex = 30;
             // 
-            // textBox12
+            // stateCommissionProtocol_Date_textBoxAdd
             // 
-            this.textBox12.Location = new System.Drawing.Point(316, 280);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(162, 20);
-            this.textBox12.TabIndex = 29;
+            this.stateCommissionProtocol_Date_textBoxAdd.Location = new System.Drawing.Point(316, 280);
+            this.stateCommissionProtocol_Date_textBoxAdd.Name = "stateCommissionProtocol_Date_textBoxAdd";
+            this.stateCommissionProtocol_Date_textBoxAdd.Size = new System.Drawing.Size(162, 20);
+            this.stateCommissionProtocol_Date_textBoxAdd.TabIndex = 29;
             // 
-            // comboBox1
+            // honors_comboBoxAdd
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.honors_comboBoxAdd.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.honors_comboBoxAdd.FormattingEnabled = true;
+            this.honors_comboBoxAdd.Items.AddRange(new object[] {
             "Да",
             "Нет"});
-            this.comboBox1.Location = new System.Drawing.Point(316, 254);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(162, 21);
-            this.comboBox1.TabIndex = 28;
+            this.honors_comboBoxAdd.Location = new System.Drawing.Point(316, 254);
+            this.honors_comboBoxAdd.Name = "honors_comboBoxAdd";
+            this.honors_comboBoxAdd.Size = new System.Drawing.Size(162, 21);
+            this.honors_comboBoxAdd.TabIndex = 28;
             // 
-            // textBox11
+            // assignedQualification_Name_textBoxAdd
             // 
-            this.textBox11.Location = new System.Drawing.Point(316, 222);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(162, 20);
-            this.textBox11.TabIndex = 26;
+            this.assignedQualification_Name_textBoxAdd.Location = new System.Drawing.Point(316, 222);
+            this.assignedQualification_Name_textBoxAdd.Name = "assignedQualification_Name_textBoxAdd";
+            this.assignedQualification_Name_textBoxAdd.Size = new System.Drawing.Size(162, 20);
+            this.assignedQualification_Name_textBoxAdd.TabIndex = 26;
             // 
-            // textBox10
+            // traningDC_textBoxAdd
             // 
-            this.textBox10.Location = new System.Drawing.Point(316, 158);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(162, 20);
-            this.textBox10.TabIndex = 25;
+            this.traningDC_textBoxAdd.Location = new System.Drawing.Point(316, 158);
+            this.traningDC_textBoxAdd.Name = "traningDC_textBoxAdd";
+            this.traningDC_textBoxAdd.Size = new System.Drawing.Size(162, 20);
+            this.traningDC_textBoxAdd.TabIndex = 25;
             // 
-            // textBox2
+            // diploma_sup_form_SN_textBoxAdd
             // 
-            this.textBox2.Location = new System.Drawing.Point(316, 101);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(162, 20);
-            this.textBox2.TabIndex = 24;
+            this.diploma_sup_form_SN_textBoxAdd.Location = new System.Drawing.Point(316, 101);
+            this.diploma_sup_form_SN_textBoxAdd.Name = "diploma_sup_form_SN_textBoxAdd";
+            this.diploma_sup_form_SN_textBoxAdd.Size = new System.Drawing.Size(162, 20);
+            this.diploma_sup_form_SN_textBoxAdd.TabIndex = 24;
             // 
             // label21
             // 
@@ -340,19 +340,19 @@
             this.label9.TabIndex = 11;
             this.label9.Text = "Код направления подготовки";
             // 
-            // dateTimePicker1
+            // diploma_issue_dateTimePickerAdd
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(316, 132);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(162, 20);
-            this.dateTimePicker1.TabIndex = 10;
+            this.diploma_issue_dateTimePickerAdd.Location = new System.Drawing.Point(316, 132);
+            this.diploma_issue_dateTimePickerAdd.Name = "diploma_issue_dateTimePickerAdd";
+            this.diploma_issue_dateTimePickerAdd.Size = new System.Drawing.Size(162, 20);
+            this.diploma_issue_dateTimePickerAdd.TabIndex = 10;
             // 
-            // textBox9
+            // diploma_RN_textBoxAdd
             // 
-            this.textBox9.Location = new System.Drawing.Point(316, 24);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(162, 20);
-            this.textBox9.TabIndex = 5;
+            this.diploma_RN_textBoxAdd.Location = new System.Drawing.Point(316, 24);
+            this.diploma_RN_textBoxAdd.Name = "diploma_RN_textBoxAdd";
+            this.diploma_RN_textBoxAdd.Size = new System.Drawing.Size(162, 20);
+            this.diploma_RN_textBoxAdd.TabIndex = 5;
             // 
             // label8
             // 
@@ -390,48 +390,48 @@
             this.label5.TabIndex = 6;
             this.label5.Text = "Регистрационный номер диплома";
             // 
-            // button1
+            // add_student_button
             // 
-            this.button1.Location = new System.Drawing.Point(586, 364);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 37);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Добавить";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.add_student_button.Location = new System.Drawing.Point(586, 364);
+            this.add_student_button.Name = "add_student_button";
+            this.add_student_button.Size = new System.Drawing.Size(94, 37);
+            this.add_student_button.TabIndex = 5;
+            this.add_student_button.Text = "Добавить";
+            this.add_student_button.UseVisualStyleBackColor = true;
+            this.add_student_button.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox3
+            // diplomaForm_SN_textBoxAdd
             // 
-            this.textBox3.Location = new System.Drawing.Point(316, 75);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(162, 20);
-            this.textBox3.TabIndex = 3;
+            this.diplomaForm_SN_textBoxAdd.Location = new System.Drawing.Point(316, 75);
+            this.diplomaForm_SN_textBoxAdd.Name = "diplomaForm_SN_textBoxAdd";
+            this.diplomaForm_SN_textBoxAdd.Size = new System.Drawing.Size(162, 20);
+            this.diplomaForm_SN_textBoxAdd.TabIndex = 3;
             // 
-            // textBox1
+            // stud_name_textBoxAdd
             // 
-            this.textBox1.Location = new System.Drawing.Point(316, 47);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(162, 20);
-            this.textBox1.TabIndex = 1;
+            this.stud_name_textBoxAdd.Location = new System.Drawing.Point(316, 47);
+            this.stud_name_textBoxAdd.Name = "stud_name_textBoxAdd";
+            this.stud_name_textBoxAdd.Size = new System.Drawing.Size(162, 20);
+            this.stud_name_textBoxAdd.TabIndex = 1;
             // 
             // tabPage6
             // 
-            this.tabPage6.Controls.Add(this.textBox5);
+            this.tabPage6.Controls.Add(this.traningDN_textBoxS);
             this.tabPage6.Controls.Add(this.label1);
-            this.tabPage6.Controls.Add(this.textBox6);
-            this.tabPage6.Controls.Add(this.comboBox4);
-            this.tabPage6.Controls.Add(this.textBox7);
-            this.tabPage6.Controls.Add(this.textBox8);
+            this.tabPage6.Controls.Add(this.passport_textBoxS);
+            this.tabPage6.Controls.Add(this.honors_comboBoxS);
+            this.tabPage6.Controls.Add(this.assignedQualification_Name_textBoxS);
+            this.tabPage6.Controls.Add(this.traningDC_textBoxS);
             this.tabPage6.Controls.Add(this.label2);
             this.tabPage6.Controls.Add(this.label3);
             this.tabPage6.Controls.Add(this.label4);
             this.tabPage6.Controls.Add(this.label18);
-            this.tabPage6.Controls.Add(this.dateTimePicker2);
-            this.tabPage6.Controls.Add(this.textBox16);
+            this.tabPage6.Controls.Add(this.diploma_issue_dateTimePickerS);
+            this.tabPage6.Controls.Add(this.diploma_RN_textBoxS);
             this.tabPage6.Controls.Add(this.label19);
             this.tabPage6.Controls.Add(this.label20);
             this.tabPage6.Controls.Add(this.label22);
-            this.tabPage6.Controls.Add(this.textBox17);
+            this.tabPage6.Controls.Add(this.stud_name_textBoxS);
             this.tabPage6.Controls.Add(this.Export_button);
             this.tabPage6.Controls.Add(this.dataGridView2);
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
@@ -441,54 +441,59 @@
             this.tabPage6.Text = "Поиск";
             this.tabPage6.UseVisualStyleBackColor = true;
             // 
-            // textBox5
+            // traningDN_textBoxS
             // 
-            this.textBox5.Location = new System.Drawing.Point(165, 119);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(153, 20);
-            this.textBox5.TabIndex = 51;
+            this.traningDN_textBoxS.Location = new System.Drawing.Point(165, 119);
+            this.traningDN_textBoxS.Name = "traningDN_textBoxS";
+            this.traningDN_textBoxS.Size = new System.Drawing.Size(153, 20);
+            this.traningDN_textBoxS.TabIndex = 51;
+            this.traningDN_textBoxS.TextChanged += new System.EventHandler(this.traningDN_textBoxS_TextChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(18, 122);
+            this.label1.Location = new System.Drawing.Point(14, 122);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(136, 13);
             this.label1.TabIndex = 50;
             this.label1.Text = "Направление подготовки";
             // 
-            // textBox6
+            // passport_textBoxS
             // 
-            this.textBox6.Location = new System.Drawing.Point(165, 198);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(153, 20);
-            this.textBox6.TabIndex = 49;
+            this.passport_textBoxS.Location = new System.Drawing.Point(165, 198);
+            this.passport_textBoxS.Name = "passport_textBoxS";
+            this.passport_textBoxS.Size = new System.Drawing.Size(153, 20);
+            this.passport_textBoxS.TabIndex = 49;
+            this.passport_textBoxS.TextChanged += new System.EventHandler(this.passport_textBoxS_TextChanged);
             // 
-            // comboBox4
+            // honors_comboBoxS
             // 
-            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
+            this.honors_comboBoxS.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.honors_comboBoxS.FormattingEnabled = true;
+            this.honors_comboBoxS.Items.AddRange(new object[] {
             "Да",
             "Нет"});
-            this.comboBox4.Location = new System.Drawing.Point(165, 171);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(153, 21);
-            this.comboBox4.TabIndex = 48;
+            this.honors_comboBoxS.Location = new System.Drawing.Point(165, 171);
+            this.honors_comboBoxS.Name = "honors_comboBoxS";
+            this.honors_comboBoxS.Size = new System.Drawing.Size(153, 21);
+            this.honors_comboBoxS.TabIndex = 48;
+            this.honors_comboBoxS.SelectionChangeCommitted += new System.EventHandler(this.honors_comboBoxS_SelectionChangeCommitted);
             // 
-            // textBox7
+            // assignedQualification_Name_textBoxS
             // 
-            this.textBox7.Location = new System.Drawing.Point(165, 145);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(153, 20);
-            this.textBox7.TabIndex = 47;
+            this.assignedQualification_Name_textBoxS.Location = new System.Drawing.Point(165, 145);
+            this.assignedQualification_Name_textBoxS.Name = "assignedQualification_Name_textBoxS";
+            this.assignedQualification_Name_textBoxS.Size = new System.Drawing.Size(153, 20);
+            this.assignedQualification_Name_textBoxS.TabIndex = 47;
+            this.assignedQualification_Name_textBoxS.TextChanged += new System.EventHandler(this.assignedQualification_Name_textBoxS_TextChanged);
             // 
-            // textBox8
+            // traningDC_textBoxS
             // 
-            this.textBox8.Location = new System.Drawing.Point(165, 88);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(153, 20);
-            this.textBox8.TabIndex = 46;
+            this.traningDC_textBoxS.Location = new System.Drawing.Point(165, 88);
+            this.traningDC_textBoxS.Name = "traningDC_textBoxS";
+            this.traningDC_textBoxS.Size = new System.Drawing.Size(153, 20);
+            this.traningDC_textBoxS.TabIndex = 46;
+            this.traningDC_textBoxS.TextChanged += new System.EventHandler(this.traningDC_textBoxS_TextChanged);
             // 
             // label2
             // 
@@ -520,30 +525,31 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(3, 91);
+            this.label18.Location = new System.Drawing.Point(-2, 91);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(156, 13);
             this.label18.TabIndex = 42;
             this.label18.Text = "Код направления подготовки";
             // 
-            // dateTimePicker2
+            // diploma_issue_dateTimePickerS
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(165, 62);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(153, 20);
-            this.dateTimePicker2.TabIndex = 41;
+            this.diploma_issue_dateTimePickerS.Location = new System.Drawing.Point(165, 62);
+            this.diploma_issue_dateTimePickerS.Name = "diploma_issue_dateTimePickerS";
+            this.diploma_issue_dateTimePickerS.Size = new System.Drawing.Size(153, 20);
+            this.diploma_issue_dateTimePickerS.TabIndex = 41;
             // 
-            // textBox16
+            // diploma_RN_textBoxS
             // 
-            this.textBox16.Location = new System.Drawing.Point(165, 13);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(153, 20);
-            this.textBox16.TabIndex = 37;
+            this.diploma_RN_textBoxS.Location = new System.Drawing.Point(165, 13);
+            this.diploma_RN_textBoxS.Name = "diploma_RN_textBoxS";
+            this.diploma_RN_textBoxS.Size = new System.Drawing.Size(153, 20);
+            this.diploma_RN_textBoxS.TabIndex = 37;
+            this.diploma_RN_textBoxS.TextChanged += new System.EventHandler(this.diploma_RN_textBoxS_TextChanged);
             // 
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(30, 61);
+            this.label19.Location = new System.Drawing.Point(30, 68);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(120, 13);
             this.label19.TabIndex = 40;
@@ -552,7 +558,7 @@
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(125, 39);
+            this.label20.Location = new System.Drawing.Point(116, 39);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(34, 13);
             this.label20.TabIndex = 39;
@@ -561,18 +567,19 @@
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(52, 16);
+            this.label22.Location = new System.Drawing.Point(43, 16);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(107, 13);
             this.label22.TabIndex = 38;
             this.label22.Text = "Рег номер диплома";
             // 
-            // textBox17
+            // stud_name_textBoxS
             // 
-            this.textBox17.Location = new System.Drawing.Point(165, 36);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(153, 20);
-            this.textBox17.TabIndex = 36;
+            this.stud_name_textBoxS.Location = new System.Drawing.Point(165, 36);
+            this.stud_name_textBoxS.Name = "stud_name_textBoxS";
+            this.stud_name_textBoxS.Size = new System.Drawing.Size(153, 20);
+            this.stud_name_textBoxS.TabIndex = 36;
+            this.stud_name_textBoxS.TextChanged += new System.EventHandler(this.stud_name_textBoxS_TextChanged);
             // 
             // Export_button
             // 
@@ -807,10 +814,10 @@
 
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox diplomaForm_SN_textBoxAdd;
+        private System.Windows.Forms.TextBox stud_name_textBoxAdd;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button add_student_button;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DataGridView dataGridView1;
@@ -824,7 +831,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox diploma_RN_textBoxAdd;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.DataGridView dataGridView3;
         private System.Windows.Forms.ToolStrip toolStrip1;
@@ -834,10 +841,10 @@
         private System.Windows.Forms.ToolStripMenuItem файлToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem открытьToolStripMenuItem;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker diploma_issue_dateTimePickerAdd;
         private System.Windows.Forms.Button Export_button;
         private System.Windows.Forms.DataGridView dataGridView4;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox diploma_sup_form_SN_textBoxAdd;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
@@ -847,32 +854,32 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.ComboBox honors_comboBoxAdd;
+        private System.Windows.Forms.TextBox assignedQualification_Name_textBoxAdd;
+        private System.Windows.Forms.TextBox traningDC_textBoxAdd;
+        private System.Windows.Forms.ComboBox managment_signature_comboBoxAdd;
+        private System.Windows.Forms.ComboBox student_signature_comboBoxAdd;
+        private System.Windows.Forms.TextBox passport_textBoxAdd;
+        private System.Windows.Forms.TextBox graduationExplusionOrder_Date_textBoxAdd;
+        private System.Windows.Forms.TextBox stateCommissionProtocol_Date_textBoxAdd;
+        private System.Windows.Forms.TextBox traningDN_textBoxAdd;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox traningDN_textBoxS;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox passport_textBoxS;
+        private System.Windows.Forms.ComboBox honors_comboBoxS;
+        private System.Windows.Forms.TextBox assignedQualification_Name_textBoxS;
+        private System.Windows.Forms.TextBox traningDC_textBoxS;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.DateTimePicker diploma_issue_dateTimePickerS;
+        private System.Windows.Forms.TextBox diploma_RN_textBoxS;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.TextBox textBox17;
+        private System.Windows.Forms.TextBox stud_name_textBoxS;
     }
 }
 

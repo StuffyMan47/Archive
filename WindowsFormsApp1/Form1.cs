@@ -83,40 +83,16 @@ namespace WindowsFormsApp1
 
         private void button3_Click(object sender, EventArgs e) //Кнопка "Поиск" (2)
         {
-            listView1.Items.Clear();
 
-            SqlDataReader dataReader = null;
+            SqlDataAdapter dataAdapter = new SqlDataAdapter(
+                "SELECT * FROM KGEU_Diploma",
+                sqlConnection);
 
-            try 
-            {
-                SqlCommand sqlCommand = new SqlCommand("SELECT * FROM Students",
-                    sqlConnection);
+            DataSet dataSet = new DataSet();
 
-                dataReader = sqlCommand.ExecuteReader();
+            dataAdapter.Fill(dataSet);
 
-                ListViewItem item = null;
-
-                while (dataReader.Read())
-                {
-                    item = new ListViewItem(new string[] { Convert.ToString(dataReader["ID"]), 
-                        Convert.ToString(dataReader["Name"]), 
-                        Convert.ToString(dataReader["Birthday"]), 
-                        Convert.ToString(dataReader["Graduation"]) });
-
-                    listView1.Items.Add(item);
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            finally
-            {
-                if (dataReader != null && !dataReader.IsClosed)
-                {
-                    dataReader.Close();
-                }
-            }
+            dataGridView4.DataSource = dataSet.Tables[0];
         }
 
         //Фильтрация

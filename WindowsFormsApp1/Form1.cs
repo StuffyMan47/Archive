@@ -54,18 +54,32 @@ namespace WindowsFormsApp1
         {
             //Подключение БД
             SqlCommand command = new SqlCommand(
-                $"INSERT INTO [Students] (Name, Birthday, Graduation) VALUES (@Name, @Birthday, @Graduation)", sqlConnection);
+                $"INSERT INTO [KGEU_Diploma] (diploma_RN, studName, diplomaForm_SN, diploma_supplement_form_SN, diplomaIssue_Date, trainingDirection_code, trainingDirection_Name, assignedQualification_Name, honors, stateCommissionProtocol_Date, graduateExpulsionOrder_Date, passport, admission_Year, graduation_Year) VALUES (@diploma_RN, @studName, @diplomaForm_SN, @diploma_supplement_form_SN, @diplomaIssue_Date, @trainingDirection_code, @trainingDirection_Name, @assignedQualification_Name, @honors, @stateCommissionProtocol_Date, @graduateExpulsionOrder_Date, @passport, @admission_Year, @graduation_Year)", sqlConnection);
 
             //Заполнение БД
 
             //string validformat = "dd-MM-yyyy";
 
-            command.Parameters.AddWithValue("Name", stud_name_textBoxAdd.Text);
-            command.Parameters.AddWithValue("Birthday", $"{diploma_issue_dateTimePickerAdd.Value.Day}/{diploma_issue_dateTimePickerAdd.Value.Month}/{diploma_issue_dateTimePickerAdd.Value.Year}");
-            command.Parameters.AddWithValue("Graduation", diplomaForm_SN_textBoxAdd.Text);
+            command.Parameters.AddWithValue("diploma_RN", textBox9.Text);
+            command.Parameters.AddWithValue("studName", textBox1.Text);
+            command.Parameters.AddWithValue("diplomaForm_SN", textBox3.Text);
+            command.Parameters.AddWithValue("diploma_supplement_form_SN", textBox2.Text);
+            command.Parameters.AddWithValue("diplomaIssue_Date", $"{dateTimePicker1.Value.Day}/{dateTimePicker1.Value.Month}/{dateTimePicker1.Value.Year}");
+            command.Parameters.AddWithValue("trainingDirection_code", textBox10.Text);
+            command.Parameters.AddWithValue("trainingDirection_Name", textBox15.Text);
+            command.Parameters.AddWithValue("assignedQualification_Name", textBox11.Text);
+            if (comboBox1.Text == "Да")
+                command.Parameters.AddWithValue("honors", true);
+            else
+                command.Parameters.AddWithValue("honors", false);
+            command.Parameters.AddWithValue("stateCommissionProtocol_Date", textBox12.Text);
+            command.Parameters.AddWithValue("graduateExpulsionOrder_Date", textBox13.Text);
+            command.Parameters.AddWithValue("passport", textBox14.Text);
+            command.Parameters.AddWithValue("admission_Year", comboBox2.Text);
+            command.Parameters.AddWithValue("graduation_Year", comboBox3.Text);
 
             //Уведомление о количестве заполненных строк
-            MessageBox.Show(command.ExecuteNonQuery().ToString());
+            //MessageBox.Show(command.ExecuteNonQuery().ToString());
         }
 
         private void button2_Click(object sender, EventArgs e) //Кнопка "Поиск"
@@ -210,6 +224,11 @@ namespace WindowsFormsApp1
             }
 
             excelApp.Visible = true;
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

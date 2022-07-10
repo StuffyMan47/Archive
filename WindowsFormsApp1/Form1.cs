@@ -58,13 +58,17 @@ namespace WindowsFormsApp1
 
             //Заполнение БД
             //string validformat = "dd-MM-yyyy";
+            string DiplomaIssue_Date = diploma_issue_dateTimePickerAdd.Text;
+            string Admission_Year = diploma_status_comboBoxAdd.Text;
+            string Graduation_Year = graduation_Year_dateTimePickerAdd.Text;
+            MessageBox.Show(Graduation_Year);
 
             command.Parameters.AddWithValue("diploma_RN", diploma_RN_textBoxAdd.Text);
             command.Parameters.AddWithValue("studName", stud_name_textBoxAdd.Text);
             command.Parameters.AddWithValue("diplomaForm_SN", diplomaForm_SN_textBoxAdd.Text);
             command.Parameters.AddWithValue("diploma_supplement_form_SN", diploma_sup_form_SN_textBoxAdd.Text);
-            command.Parameters.AddWithValue("diplomaIssue_Date", $"{diploma_issue_dateTimePickerAdd.Value.Day}/{diploma_issue_dateTimePickerAdd.Value.Month}/{diploma_issue_dateTimePickerAdd.Value.Year}");
-            //command.Parameters.AddWithValue("diplomaIssue_Date", diploma_issue_dateTimePickerAdd.Text);
+            //command.Parameters.AddWithValue("diplomaIssue_Date", $"{diploma_issue_dateTimePickerAdd.Value.Day}/{diploma_issue_dateTimePickerAdd.Value.Month}/{diploma_issue_dateTimePickerAdd.Value.Year}");
+            command.Parameters.AddWithValue("diplomaIssue_Date", DiplomaIssue_Date);
             command.Parameters.AddWithValue("trainingDirection_code", traningDC_textBoxAdd.Text);
             command.Parameters.AddWithValue("trainingDirection_Name", traningDN_textBoxAdd.Text);
             command.Parameters.AddWithValue("assignedQualification_Name", assignedQualification_Name_textBoxAdd.Text);
@@ -79,8 +83,8 @@ namespace WindowsFormsApp1
             command.Parameters.AddWithValue("stateCommissionProtocol_Date", stateCommissionProtocol_Date_textBoxAdd.Text);
             command.Parameters.AddWithValue("graduateExpulsionOrder_Date", graduationExplusionOrder_Date_textBoxAdd.Text);
             command.Parameters.AddWithValue("diploma_status", diploma_status_comboBoxAdd.Text);
-            //command.Parameters.AddWithValue("admission_Year", admission_Year_dateTimePickerAdd.Text);
-            //command.Parameters.AddWithValue("graduation_Year", graduation_Year_dateTimePickerAdd.Text);
+            command.Parameters.AddWithValue("admission_Year", Admission_Year);
+            command.Parameters.AddWithValue("graduation_Year", Graduation_Year);
             command.Parameters.AddWithValue("passport", passport_textBoxAdd.Text);
             command.Parameters.AddWithValue("student_signature", student_signature_comboBoxAdd.Text);
             command.Parameters.AddWithValue("management_signature", managment_signature_comboBoxAdd.Text);

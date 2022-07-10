@@ -30,7 +30,7 @@ namespace WindowsFormsApp1
             this.Text = "Выпускники КГЭУ";
 
             //Подключение БД
-            sqlConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["studName"].ConnectionString);
+            sqlConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["DBConnectionString"].ConnectionString);
 
             sqlConnection.Open();
 
@@ -50,36 +50,43 @@ namespace WindowsFormsApp1
             dataGridView2.DataSource = db.Tables[0];
         }
 
-        private void button1_Click(object sender, EventArgs e) //Кнопка "Добавить"
+        private void add_student_button_Click(object sender, EventArgs e) //Кнопка "Добавить"
         {
             //Подключение БД
             SqlCommand command = new SqlCommand(
-                $"INSERT INTO [KGEU_Diploma] (diploma_RN, studName, diplomaForm_SN, diploma_supplement_form_SN, diplomaIssue_Date, trainingDirection_code, trainingDirection_Name, assignedQualification_Name, honors, stateCommissionProtocol_Date, graduateExpulsionOrder_Date, passport, admission_Year, graduation_Year) VALUES (@diploma_RN, @studName, @diplomaForm_SN, @diploma_supplement_form_SN, @diplomaIssue_Date, @trainingDirection_code, @trainingDirection_Name, @assignedQualification_Name, @honors, @stateCommissionProtocol_Date, @graduateExpulsionOrder_Date, @passport, @admission_Year, @graduation_Year)", sqlConnection);
+                $"INSERT INTO [KGEU_Diploma] (diploma_RN, studName, diplomaForm_SN, diploma_supplement_form_SN, diplomaIssue_Date, trainingDirection_code, trainingDirection_Name, assignedQualification_Name, honors, stateCommissionProtocol_Date, graduateExpulsionOrder_Date, diploma_status,admission_Year, graduation_Year, passport, student_signature, management_signature) VALUES (@diploma_RN, @studName, @diplomaForm_SN, @diploma_supplement_form_SN, @diplomaIssue_Date, @trainingDirection_code, @trainingDirection_Name, @assignedQualification_Name, @honors, @stateCommissionProtocol_Date, @graduateExpulsionOrder_Date, @diploma_status, @admission_Year, @graduation_Year, @passport, @student_signature, @management_signature)", sqlConnection);
 
             //Заполнение БД
-
             //string validformat = "dd-MM-yyyy";
 
-            command.Parameters.AddWithValue("diploma_RN", textBox9.Text);
-            command.Parameters.AddWithValue("studName", textBox1.Text);
-            command.Parameters.AddWithValue("diplomaForm_SN", textBox3.Text);
-            command.Parameters.AddWithValue("diploma_supplement_form_SN", textBox2.Text);
-            command.Parameters.AddWithValue("diplomaIssue_Date", $"{dateTimePicker1.Value.Day}/{dateTimePicker1.Value.Month}/{dateTimePicker1.Value.Year}");
-            command.Parameters.AddWithValue("trainingDirection_code", textBox10.Text);
-            command.Parameters.AddWithValue("trainingDirection_Name", textBox15.Text);
-            command.Parameters.AddWithValue("assignedQualification_Name", textBox11.Text);
-            if (comboBox1.Text == "Да")
+            command.Parameters.AddWithValue("diploma_RN", diploma_RN_textBoxAdd.Text);
+            command.Parameters.AddWithValue("studName", stud_name_textBoxAdd.Text);
+            command.Parameters.AddWithValue("diplomaForm_SN", diplomaForm_SN_textBoxAdd.Text);
+            command.Parameters.AddWithValue("diploma_supplement_form_SN", diploma_sup_form_SN_textBoxAdd.Text);
+            command.Parameters.AddWithValue("diplomaIssue_Date", $"{diploma_issue_dateTimePickerAdd.Value.Day}/{diploma_issue_dateTimePickerAdd.Value.Month}/{diploma_issue_dateTimePickerAdd.Value.Year}");
+            //command.Parameters.AddWithValue("diplomaIssue_Date", diploma_issue_dateTimePickerAdd.Text);
+            command.Parameters.AddWithValue("trainingDirection_code", traningDC_textBoxAdd.Text);
+            command.Parameters.AddWithValue("trainingDirection_Name", traningDN_textBoxAdd.Text);
+            command.Parameters.AddWithValue("assignedQualification_Name", assignedQualification_Name_textBoxAdd.Text);
+            if (honors_comboBoxAdd.Text == "Да")
+            {
                 command.Parameters.AddWithValue("honors", true);
+            }
             else
+            {
                 command.Parameters.AddWithValue("honors", false);
-            command.Parameters.AddWithValue("stateCommissionProtocol_Date", textBox12.Text);
-            command.Parameters.AddWithValue("graduateExpulsionOrder_Date", textBox13.Text);
-            command.Parameters.AddWithValue("passport", textBox14.Text);
-            command.Parameters.AddWithValue("admission_Year", comboBox2.Text);
-            command.Parameters.AddWithValue("graduation_Year", comboBox3.Text);
+            }
+            command.Parameters.AddWithValue("stateCommissionProtocol_Date", stateCommissionProtocol_Date_textBoxAdd.Text);
+            command.Parameters.AddWithValue("graduateExpulsionOrder_Date", graduationExplusionOrder_Date_textBoxAdd.Text);
+            command.Parameters.AddWithValue("diploma_status", diploma_status_comboBoxAdd.Text);
+            //command.Parameters.AddWithValue("admission_Year", admission_Year_dateTimePickerAdd.Text);
+            //command.Parameters.AddWithValue("graduation_Year", graduation_Year_dateTimePickerAdd.Text);
+            command.Parameters.AddWithValue("passport", passport_textBoxAdd.Text);
+            command.Parameters.AddWithValue("student_signature", student_signature_comboBoxAdd.Text);
+            command.Parameters.AddWithValue("management_signature", managment_signature_comboBoxAdd.Text);
 
             //Уведомление о количестве заполненных строк
-            //MessageBox.Show(command.ExecuteNonQuery().ToString());
+            MessageBox.Show(command.ExecuteNonQuery().ToString());
         }
 
         private void button2_Click(object sender, EventArgs e) //Кнопка "Поиск"

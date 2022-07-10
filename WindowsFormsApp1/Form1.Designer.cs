@@ -30,6 +30,8 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.diploma_status_comboBoxAdd = new System.Windows.Forms.ComboBox();
+            this.label23 = new System.Windows.Forms.Label();
             this.traningDN_textBoxAdd = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.managment_signature_comboBoxAdd = new System.Windows.Forms.ComboBox();
@@ -96,6 +98,10 @@
             this.файлToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.открытьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.admission_Year_dateTimePickerAdd = new System.Windows.Forms.DateTimePicker();
+            this.graduation_Year_dateTimePickerAdd = new System.Windows.Forms.DateTimePicker();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage6.SuspendLayout();
@@ -123,12 +129,18 @@
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(800, 450);
+            this.tabControl1.Size = new System.Drawing.Size(800, 542);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.White;
+            this.tabPage1.Controls.Add(this.label25);
+            this.tabPage1.Controls.Add(this.label24);
+            this.tabPage1.Controls.Add(this.graduation_Year_dateTimePickerAdd);
+            this.tabPage1.Controls.Add(this.admission_Year_dateTimePickerAdd);
+            this.tabPage1.Controls.Add(this.diploma_status_comboBoxAdd);
+            this.tabPage1.Controls.Add(this.label23);
             this.tabPage1.Controls.Add(this.traningDN_textBoxAdd);
             this.tabPage1.Controls.Add(this.label17);
             this.tabPage1.Controls.Add(this.managment_signature_comboBoxAdd);
@@ -161,14 +173,35 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(792, 424);
+            this.tabPage1.Size = new System.Drawing.Size(792, 516);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Добавить";
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
+            // diploma_status_comboBoxAdd
+            // 
+            this.diploma_status_comboBoxAdd.FormattingEnabled = true;
+            this.diploma_status_comboBoxAdd.Items.AddRange(new object[] {
+            "Выдан",
+            "Не выдан",
+            "Утерян (выдан дублика)"});
+            this.diploma_status_comboBoxAdd.Location = new System.Drawing.Point(316, 351);
+            this.diploma_status_comboBoxAdd.Name = "diploma_status_comboBoxAdd";
+            this.diploma_status_comboBoxAdd.Size = new System.Drawing.Size(162, 21);
+            this.diploma_status_comboBoxAdd.TabIndex = 38;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(196, 354);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(88, 13);
+            this.label23.TabIndex = 37;
+            this.label23.Text = "Статус диплома";
+            // 
             // traningDN_textBoxAdd
             // 
-            this.traningDN_textBoxAdd.Location = new System.Drawing.Point(316, 188);
+            this.traningDN_textBoxAdd.Location = new System.Drawing.Point(316, 191);
             this.traningDN_textBoxAdd.Name = "traningDN_textBoxAdd";
             this.traningDN_textBoxAdd.Size = new System.Drawing.Size(162, 20);
             this.traningDN_textBoxAdd.TabIndex = 35;
@@ -176,7 +209,7 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(97, 191);
+            this.label17.Location = new System.Drawing.Point(71, 194);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(213, 13);
             this.label17.TabIndex = 34;
@@ -189,7 +222,7 @@
             this.managment_signature_comboBoxAdd.Items.AddRange(new object[] {
             "Имеется",
             "Остутсвует"});
-            this.managment_signature_comboBoxAdd.Location = new System.Drawing.Point(316, 385);
+            this.managment_signature_comboBoxAdd.Location = new System.Drawing.Point(316, 488);
             this.managment_signature_comboBoxAdd.Name = "managment_signature_comboBoxAdd";
             this.managment_signature_comboBoxAdd.Size = new System.Drawing.Size(162, 21);
             this.managment_signature_comboBoxAdd.TabIndex = 33;
@@ -201,28 +234,28 @@
             this.student_signature_comboBoxAdd.Items.AddRange(new object[] {
             "Имеется",
             "Остутсвует"});
-            this.student_signature_comboBoxAdd.Location = new System.Drawing.Point(316, 358);
+            this.student_signature_comboBoxAdd.Location = new System.Drawing.Point(316, 461);
             this.student_signature_comboBoxAdd.Name = "student_signature_comboBoxAdd";
             this.student_signature_comboBoxAdd.Size = new System.Drawing.Size(162, 21);
             this.student_signature_comboBoxAdd.TabIndex = 32;
             // 
             // passport_textBoxAdd
             // 
-            this.passport_textBoxAdd.Location = new System.Drawing.Point(316, 332);
+            this.passport_textBoxAdd.Location = new System.Drawing.Point(316, 435);
             this.passport_textBoxAdd.Name = "passport_textBoxAdd";
             this.passport_textBoxAdd.Size = new System.Drawing.Size(162, 20);
             this.passport_textBoxAdd.TabIndex = 31;
             // 
             // graduationExplusionOrder_Date_textBoxAdd
             // 
-            this.graduationExplusionOrder_Date_textBoxAdd.Location = new System.Drawing.Point(316, 306);
+            this.graduationExplusionOrder_Date_textBoxAdd.Location = new System.Drawing.Point(316, 316);
             this.graduationExplusionOrder_Date_textBoxAdd.Name = "graduationExplusionOrder_Date_textBoxAdd";
             this.graduationExplusionOrder_Date_textBoxAdd.Size = new System.Drawing.Size(162, 20);
             this.graduationExplusionOrder_Date_textBoxAdd.TabIndex = 30;
             // 
             // stateCommissionProtocol_Date_textBoxAdd
             // 
-            this.stateCommissionProtocol_Date_textBoxAdd.Location = new System.Drawing.Point(316, 280);
+            this.stateCommissionProtocol_Date_textBoxAdd.Location = new System.Drawing.Point(316, 283);
             this.stateCommissionProtocol_Date_textBoxAdd.Name = "stateCommissionProtocol_Date_textBoxAdd";
             this.stateCommissionProtocol_Date_textBoxAdd.Size = new System.Drawing.Size(162, 20);
             this.stateCommissionProtocol_Date_textBoxAdd.TabIndex = 29;
@@ -255,7 +288,7 @@
             // 
             // diploma_sup_form_SN_textBoxAdd
             // 
-            this.diploma_sup_form_SN_textBoxAdd.Location = new System.Drawing.Point(316, 101);
+            this.diploma_sup_form_SN_textBoxAdd.Location = new System.Drawing.Point(316, 98);
             this.diploma_sup_form_SN_textBoxAdd.Name = "diploma_sup_form_SN_textBoxAdd";
             this.diploma_sup_form_SN_textBoxAdd.Size = new System.Drawing.Size(162, 20);
             this.diploma_sup_form_SN_textBoxAdd.TabIndex = 24;
@@ -263,7 +296,7 @@
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(108, 104);
+            this.label21.Location = new System.Drawing.Point(82, 101);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(202, 13);
             this.label21.TabIndex = 23;
@@ -272,7 +305,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(192, 393);
+            this.label16.Location = new System.Drawing.Point(166, 491);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(118, 13);
             this.label16.TabIndex = 18;
@@ -281,7 +314,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(92, 366);
+            this.label15.Location = new System.Drawing.Point(66, 464);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(218, 13);
             this.label15.TabIndex = 17;
@@ -290,7 +323,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(199, 332);
+            this.label14.Location = new System.Drawing.Point(173, 438);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(111, 13);
             this.label14.TabIndex = 16;
@@ -299,7 +332,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(48, 309);
+            this.label13.Location = new System.Drawing.Point(22, 319);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(262, 13);
             this.label13.TabIndex = 15;
@@ -308,7 +341,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(34, 285);
+            this.label12.Location = new System.Drawing.Point(8, 286);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(276, 13);
             this.label12.TabIndex = 14;
@@ -317,7 +350,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(202, 257);
+            this.label11.Location = new System.Drawing.Point(176, 257);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(108, 13);
             this.label11.TabIndex = 13;
@@ -326,16 +359,16 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(72, 225);
+            this.label10.Location = new System.Drawing.Point(49, 225);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(238, 13);
+            this.label10.Size = new System.Drawing.Size(235, 13);
             this.label10.TabIndex = 12;
-            this.label10.Text = "Наименование присвоенной квалификацией ";
+            this.label10.Text = "Наименование присвоенной квалификацией";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(154, 165);
+            this.label9.Location = new System.Drawing.Point(128, 161);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(156, 13);
             this.label9.TabIndex = 11;
@@ -343,14 +376,14 @@
             // 
             // diploma_issue_dateTimePickerAdd
             // 
-            this.diploma_issue_dateTimePickerAdd.Location = new System.Drawing.Point(316, 132);
+            this.diploma_issue_dateTimePickerAdd.Location = new System.Drawing.Point(316, 124);
             this.diploma_issue_dateTimePickerAdd.Name = "diploma_issue_dateTimePickerAdd";
             this.diploma_issue_dateTimePickerAdd.Size = new System.Drawing.Size(162, 20);
             this.diploma_issue_dateTimePickerAdd.TabIndex = 10;
             // 
             // diploma_RN_textBoxAdd
             // 
-            this.diploma_RN_textBoxAdd.Location = new System.Drawing.Point(316, 24);
+            this.diploma_RN_textBoxAdd.Location = new System.Drawing.Point(316, 20);
             this.diploma_RN_textBoxAdd.Name = "diploma_RN_textBoxAdd";
             this.diploma_RN_textBoxAdd.Size = new System.Drawing.Size(162, 20);
             this.diploma_RN_textBoxAdd.TabIndex = 5;
@@ -358,7 +391,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(190, 138);
+            this.label8.Location = new System.Drawing.Point(164, 130);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(120, 13);
             this.label8.TabIndex = 9;
@@ -367,7 +400,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(142, 78);
+            this.label7.Location = new System.Drawing.Point(116, 75);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(168, 13);
             this.label7.TabIndex = 8;
@@ -376,7 +409,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(276, 50);
+            this.label6.Location = new System.Drawing.Point(250, 49);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(34, 13);
             this.label6.TabIndex = 7;
@@ -385,7 +418,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(130, 27);
+            this.label5.Location = new System.Drawing.Point(104, 23);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(180, 13);
             this.label5.TabIndex = 6;
@@ -393,24 +426,24 @@
             // 
             // add_student_button
             // 
-            this.add_student_button.Location = new System.Drawing.Point(586, 364);
+            this.add_student_button.Location = new System.Drawing.Point(512, 471);
             this.add_student_button.Name = "add_student_button";
             this.add_student_button.Size = new System.Drawing.Size(94, 37);
             this.add_student_button.TabIndex = 5;
             this.add_student_button.Text = "Добавить";
             this.add_student_button.UseVisualStyleBackColor = true;
-            this.add_student_button.Click += new System.EventHandler(this.button1_Click);
+            this.add_student_button.Click += new System.EventHandler(this.add_student_button_Click);
             // 
             // diplomaForm_SN_textBoxAdd
             // 
-            this.diplomaForm_SN_textBoxAdd.Location = new System.Drawing.Point(316, 75);
+            this.diplomaForm_SN_textBoxAdd.Location = new System.Drawing.Point(316, 72);
             this.diplomaForm_SN_textBoxAdd.Name = "diplomaForm_SN_textBoxAdd";
             this.diplomaForm_SN_textBoxAdd.Size = new System.Drawing.Size(162, 20);
             this.diplomaForm_SN_textBoxAdd.TabIndex = 3;
             // 
             // stud_name_textBoxAdd
             // 
-            this.stud_name_textBoxAdd.Location = new System.Drawing.Point(316, 47);
+            this.stud_name_textBoxAdd.Location = new System.Drawing.Point(316, 46);
             this.stud_name_textBoxAdd.Name = "stud_name_textBoxAdd";
             this.stud_name_textBoxAdd.Size = new System.Drawing.Size(162, 20);
             this.stud_name_textBoxAdd.TabIndex = 1;
@@ -437,7 +470,7 @@
             this.tabPage6.Controls.Add(this.dataGridView2);
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(792, 424);
+            this.tabPage6.Size = new System.Drawing.Size(792, 516);
             this.tabPage6.TabIndex = 3;
             this.tabPage6.Text = "Поиск";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -598,7 +631,7 @@
             this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Right;
             this.dataGridView2.Location = new System.Drawing.Point(324, 0);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(468, 424);
+            this.dataGridView2.Size = new System.Drawing.Size(468, 516);
             this.dataGridView2.TabIndex = 0;
             // 
             // tabPage5
@@ -606,7 +639,7 @@
             this.tabPage5.Controls.Add(this.tableLayoutPanel2);
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(792, 424);
+            this.tabPage5.Size = new System.Drawing.Size(792, 516);
             this.tabPage5.TabIndex = 2;
             this.tabPage5.Text = "Список студентов";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -623,12 +656,12 @@
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(792, 424);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(792, 516);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(3, 384);
+            this.button3.Location = new System.Drawing.Point(3, 467);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(96, 32);
             this.button3.TabIndex = 1;
@@ -645,7 +678,7 @@
             this.dataGridView4.Location = new System.Drawing.Point(3, 3);
             this.dataGridView4.Name = "dataGridView4";
             this.dataGridView4.ReadOnly = true;
-            this.dataGridView4.Size = new System.Drawing.Size(786, 375);
+            this.dataGridView4.Size = new System.Drawing.Size(786, 458);
             this.dataGridView4.TabIndex = 2;
             // 
             // tabPage2
@@ -654,7 +687,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(792, 424);
+            this.tabPage2.Size = new System.Drawing.Size(792, 516);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "SQL запрос";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -673,7 +706,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(786, 418);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(786, 510);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // dataGridView1
@@ -682,12 +715,12 @@
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(3, 3);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(780, 328);
+            this.dataGridView1.Size = new System.Drawing.Size(780, 402);
             this.dataGridView1.TabIndex = 1;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(3, 378);
+            this.button2.Location = new System.Drawing.Point(3, 462);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(84, 36);
             this.button2.TabIndex = 0;
@@ -698,7 +731,7 @@
             // textBox4
             // 
             this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox4.Location = new System.Drawing.Point(3, 337);
+            this.textBox4.Location = new System.Drawing.Point(3, 411);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(778, 29);
             this.textBox4.TabIndex = 2;
@@ -710,7 +743,7 @@
             this.tabPage3.Controls.Add(this.menuStrip1);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(792, 424);
+            this.tabPage3.Size = new System.Drawing.Size(792, 516);
             this.tabPage3.TabIndex = 4;
             this.tabPage3.Text = "Excel";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -721,7 +754,7 @@
             this.dataGridView3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView3.Location = new System.Drawing.Point(0, 49);
             this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(792, 375);
+            this.dataGridView3.Size = new System.Drawing.Size(792, 467);
             this.dataGridView3.TabIndex = 2;
             // 
             // toolStrip1
@@ -777,11 +810,43 @@
             this.openFileDialog1.FileName = "openFileDialog1";
             this.openFileDialog1.Filter = "Excel|*.xlsx";
             // 
+            // admission_Year_dateTimePickerAdd
+            // 
+            this.admission_Year_dateTimePickerAdd.Location = new System.Drawing.Point(316, 378);
+            this.admission_Year_dateTimePickerAdd.Name = "admission_Year_dateTimePickerAdd";
+            this.admission_Year_dateTimePickerAdd.Size = new System.Drawing.Size(162, 20);
+            this.admission_Year_dateTimePickerAdd.TabIndex = 39;
+            // 
+            // graduation_Year_dateTimePickerAdd
+            // 
+            this.graduation_Year_dateTimePickerAdd.Location = new System.Drawing.Point(316, 409);
+            this.graduation_Year_dateTimePickerAdd.Name = "graduation_Year_dateTimePickerAdd";
+            this.graduation_Year_dateTimePickerAdd.Size = new System.Drawing.Size(162, 20);
+            this.graduation_Year_dateTimePickerAdd.TabIndex = 40;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(192, 384);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(92, 13);
+            this.label24.TabIndex = 41;
+            this.label24.Text = "Год поступления";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(213, 415);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(71, 13);
+            this.label25.TabIndex = 42;
+            this.label25.Text = "Год выпуска";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 542);
             this.Controls.Add(this.tabControl1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
@@ -881,6 +946,12 @@
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.TextBox stud_name_textBoxS;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.ComboBox diploma_status_comboBoxAdd;
+        private System.Windows.Forms.DateTimePicker graduation_Year_dateTimePickerAdd;
+        private System.Windows.Forms.DateTimePicker admission_Year_dateTimePickerAdd;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label24;
     }
 }
 

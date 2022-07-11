@@ -31,7 +31,7 @@ namespace WindowsFormsApp1
 
             //Подключение БД
             sqlConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["DBConnectionString"].ConnectionString);
-
+            
             sqlConnection.Open();
 
             //Проверка подключения БД
@@ -91,6 +91,20 @@ namespace WindowsFormsApp1
 
             //Уведомление о количестве заполненных строк
             MessageBox.Show(command.ExecuteNonQuery().ToString());
+
+            diploma_RN_textBoxAdd.Text="";
+            stud_name_textBoxAdd.Text="";
+            diplomaForm_SN_textBoxAdd.Text="";
+            diploma_sup_form_SN_textBoxAdd.Text="";
+            traningDC_textBoxAdd.Text="";
+            traningDN_textBoxAdd.Text="";
+            assignedQualification_Name_textBoxAdd.Text="";
+            stateCommissionProtocol_Date_textBoxAdd.Text="";
+            graduationExplusionOrder_Date_textBoxAdd.Text="";
+            diploma_status_comboBoxAdd.Text="";
+            passport_textBoxAdd.Text="";
+            student_signature_comboBoxAdd.Text="";
+            managment_signature_comboBoxAdd.Text="";
         }
 
         private void button2_Click(object sender, EventArgs e) //Кнопка "Поиск"
@@ -235,11 +249,6 @@ namespace WindowsFormsApp1
             }
 
             excelApp.Visible = true;
-        }
-
-        private void tabPage1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

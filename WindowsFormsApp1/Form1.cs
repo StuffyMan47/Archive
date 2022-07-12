@@ -30,16 +30,20 @@ namespace WindowsFormsApp1
             this.Text = "Выпускники КГЭУ";
 
             //Подключение БД
-            sqlConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["DBConnectionString"].ConnectionString);
-            
-            sqlConnection.Open();
-
-            //Проверка подключения БД
-            if (sqlConnection.State == ConnectionState.Open)
+            try
             {
-                MessageBox.Show("Подключение установлено");
+                sqlConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["DBConnectionString"].ConnectionString);
+                sqlConnection.Open();
             }
-            else { MessageBox.Show("Ошибка в подключении БД"); }
+            catch
+            {
+                //Проверка подключения БД
+                if (sqlConnection.State != ConnectionState.Open)
+                {
+                    MessageBox.Show("Ошибка в подключении БД");
+                }
+            }
+            
 
             SqlDataAdapter dataAdapter = new SqlDataAdapter("SELECT * FROM KGEU_Diploma", sqlConnection);
 

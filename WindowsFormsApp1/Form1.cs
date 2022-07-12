@@ -61,25 +61,16 @@ namespace WindowsFormsApp1
             string DiplomaIssue_Date = diploma_issue_dateTimePickerAdd.Text;
             string Admission_Year = diploma_status_comboBoxAdd.Text;
             string Graduation_Year = graduation_Year_dateTimePickerAdd.Text;
-            MessageBox.Show(Graduation_Year);
 
             command.Parameters.AddWithValue("diploma_RN", diploma_RN_textBoxAdd.Text);
             command.Parameters.AddWithValue("studName", stud_name_textBoxAdd.Text);
             command.Parameters.AddWithValue("diplomaForm_SN", diplomaForm_SN_textBoxAdd.Text);
             command.Parameters.AddWithValue("diploma_supplement_form_SN", diploma_sup_form_SN_textBoxAdd.Text);
-            //command.Parameters.AddWithValue("diplomaIssue_Date", $"{diploma_issue_dateTimePickerAdd.Value.Day}/{diploma_issue_dateTimePickerAdd.Value.Month}/{diploma_issue_dateTimePickerAdd.Value.Year}");
             command.Parameters.AddWithValue("diplomaIssue_Date", DiplomaIssue_Date);
             command.Parameters.AddWithValue("trainingDirection_code", traningDC_textBoxAdd.Text);
             command.Parameters.AddWithValue("trainingDirection_Name", traningDN_textBoxAdd.Text);
             command.Parameters.AddWithValue("assignedQualification_Name", assignedQualification_Name_textBoxAdd.Text);
-            if (honors_comboBoxAdd.Text == "Да")
-            {
-                command.Parameters.AddWithValue("honors", true);
-            }
-            else
-            {
-                command.Parameters.AddWithValue("honors", false);
-            }
+            command.Parameters.AddWithValue("honors", honors_comboBoxAdd.Text);
             command.Parameters.AddWithValue("stateCommissionProtocol_Date", stateCommissionProtocol_Date_textBoxAdd.Text);
             command.Parameters.AddWithValue("graduateExpulsionOrder_Date", graduationExplusionOrder_Date_textBoxAdd.Text);
             command.Parameters.AddWithValue("diploma_status", diploma_status_comboBoxAdd.Text);
@@ -92,19 +83,19 @@ namespace WindowsFormsApp1
             //Уведомление о количестве заполненных строк
             MessageBox.Show(command.ExecuteNonQuery().ToString());
 
-            diploma_RN_textBoxAdd.Text="";
-            stud_name_textBoxAdd.Text="";
-            diplomaForm_SN_textBoxAdd.Text="";
-            diploma_sup_form_SN_textBoxAdd.Text="";
-            traningDC_textBoxAdd.Text="";
-            traningDN_textBoxAdd.Text="";
-            assignedQualification_Name_textBoxAdd.Text="";
-            stateCommissionProtocol_Date_textBoxAdd.Text="";
-            graduationExplusionOrder_Date_textBoxAdd.Text="";
-            diploma_status_comboBoxAdd.Text="";
-            passport_textBoxAdd.Text="";
-            student_signature_comboBoxAdd.Text="";
-            managment_signature_comboBoxAdd.Text="";
+            diploma_RN_textBoxAdd.Text = null;
+            stud_name_textBoxAdd.Text = null;
+            diplomaForm_SN_textBoxAdd.Text = null;
+            diploma_sup_form_SN_textBoxAdd.Text = null;
+            traningDC_textBoxAdd.Text = null;
+            traningDN_textBoxAdd.Text = null;
+            assignedQualification_Name_textBoxAdd.Text = null;
+            stateCommissionProtocol_Date_textBoxAdd.Text = null;
+            graduationExplusionOrder_Date_textBoxAdd.Text = null;
+            diploma_status_comboBoxAdd.Text = null;
+            passport_textBoxAdd.Text = null;
+            student_signature_comboBoxAdd.Text = null;
+            managment_signature_comboBoxAdd.Text = null;
         }
 
         private void button2_Click(object sender, EventArgs e) //Кнопка "Поиск"
@@ -239,16 +230,56 @@ namespace WindowsFormsApp1
             Excel.Application excelApp = new Excel.Application();
             excelApp.Workbooks.Add();
             Excel.Worksheet ws = (Excel.Worksheet)excelApp.ActiveSheet;
+            string[,] data = new string[17, 1];
 
             for (int i=0; i<dataGridView2.RowCount-1; i++)
             {
                 for (int j=0; j<dataGridView2.ColumnCount; j++)
                 {
-                    ws.Cells[i + 1, j + 1] = dataGridView2[j, i].Value.ToString();
+                    data[j, i] = dataGridView2[j, i].Value.ToString();
+                    //MessageBox.Show(data[j, i].ToString(), j.ToString());
+                    ws.Cells[i+7 , j +5] = dataGridView2[j, i].Value.ToString();
                 }
             }
 
-            excelApp.Visible = true;
+            // с какой строки начинаем вставлять данные из dgv
+            //int iRowCount = 3;
+
+            //for (int i = 0; i < ws.Rows.Count; i++)
+            //{
+                //excelApp.Cells[iRowCount, 1] = ws.Rows[i].Cells[0].Value.ToString();
+                //excelApp.Cells[iRowCount, 2] = ws.Rows[i].Cells[1].Value.ToString();
+                //excelApp.Cells[iRowCount, 3] = ws.Rows[i].Cells[2].Value.ToString();
+                //excelApp.Cells[iRowCount, 4] = ws.Rows[i].Cells[3].Value.ToString();
+
+                //iRowCount++;
+
+                // Добавляем строчку ниже
+                //var cellsDRnr = ws.get_Range("A" + iRowCount, "A" + iRowCount);
+                //cellsDRnr.EntireRow.Insert(-4121, m_objOpt);
+                excelApp.Visible = true;
+            //}
+        }
+
+        private void update_button_Click(object sender, EventArgs e)
+        {
+            //Обновление данных в "Поиске" (dataGridView2)
+            sqlConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["DBConnectionString"].ConnectionString);
+
+            sqlConnection.Open();
+
+            SqlDataAdapter dataAdapter = new SqlDataAdapter("SELECT * FROM KGEU_Diploma", sqlConnection);
+
+            DataSet db = new DataSet();
+
+            dataAdapter.Fill(db);
+
+            dataGridView2.DataSource = db.Tables[0];
+        }
+
+        private void WritingToTheDataBase_button_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

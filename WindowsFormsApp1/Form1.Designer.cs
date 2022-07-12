@@ -102,6 +102,8 @@
             this.файлToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.открытьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.WritingToTheDataBase_button = new System.Windows.Forms.Button();
+            this.update_button = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage6.SuspendLayout();
@@ -482,6 +484,7 @@
             // 
             // tabPage6
             // 
+            this.tabPage6.Controls.Add(this.update_button);
             this.tabPage6.Controls.Add(this.traningDN_textBoxS);
             this.tabPage6.Controls.Add(this.label1);
             this.tabPage6.Controls.Add(this.passport_textBoxS);
@@ -606,7 +609,7 @@
             // 
             // diploma_RN_textBoxS
             // 
-            this.diploma_RN_textBoxS.Location = new System.Drawing.Point(165, 13);
+            this.diploma_RN_textBoxS.Location = new System.Drawing.Point(165, 10);
             this.diploma_RN_textBoxS.Name = "diploma_RN_textBoxS";
             this.diploma_RN_textBoxS.Size = new System.Drawing.Size(153, 20);
             this.diploma_RN_textBoxS.TabIndex = 1;
@@ -771,6 +774,7 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.WritingToTheDataBase_button);
             this.tabPage3.Controls.Add(this.dataGridView3);
             this.tabPage3.Controls.Add(this.toolStrip1);
             this.tabPage3.Controls.Add(this.menuStrip1);
@@ -834,7 +838,7 @@
             // открытьToolStripMenuItem
             // 
             this.открытьToolStripMenuItem.Name = "открытьToolStripMenuItem";
-            this.открытьToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
+            this.открытьToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.открытьToolStripMenuItem.Text = "Открыть";
             this.открытьToolStripMenuItem.Click += new System.EventHandler(this.открытьToolStripMenuItem_Click);
             // 
@@ -842,6 +846,26 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             this.openFileDialog1.Filter = "Excel|*.xlsx";
+            // 
+            // WritingToTheDataBase_button
+            // 
+            this.WritingToTheDataBase_button.Location = new System.Drawing.Point(175, 24);
+            this.WritingToTheDataBase_button.Name = "WritingToTheDataBase_button";
+            this.WritingToTheDataBase_button.Size = new System.Drawing.Size(103, 25);
+            this.WritingToTheDataBase_button.TabIndex = 3;
+            this.WritingToTheDataBase_button.Text = "Записать в базу данных";
+            this.WritingToTheDataBase_button.UseVisualStyleBackColor = true;
+            this.WritingToTheDataBase_button.Click += new System.EventHandler(this.WritingToTheDataBase_button_Click);
+            // 
+            // update_button
+            // 
+            this.update_button.Location = new System.Drawing.Point(119, 246);
+            this.update_button.Name = "update_button";
+            this.update_button.Size = new System.Drawing.Size(75, 23);
+            this.update_button.TabIndex = 10;
+            this.update_button.Text = "Обновить";
+            this.update_button.UseVisualStyleBackColor = true;
+            this.update_button.Click += new System.EventHandler(this.update_button_Click);
             // 
             // Form1
             // 
@@ -953,6 +977,8 @@
         private System.Windows.Forms.DateTimePicker admission_Year_dateTimePickerAdd;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Button WritingToTheDataBase_button;
+        private System.Windows.Forms.Button update_button;
     }
 }
 

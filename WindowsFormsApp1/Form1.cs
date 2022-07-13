@@ -52,10 +52,13 @@ namespace WindowsFormsApp1
             dataAdapter.Fill(db);
 
             dataGridView2.DataSource = db.Tables[0];
+
+            sqlConnection.Close();
         }
 
         private void add_student_button_Click(object sender, EventArgs e) //Кнопка "Добавить"
         {
+            sqlConnection.Open();
             //Подключение БД
             SqlCommand command = new SqlCommand(
                 $"INSERT INTO [KGEU_Diploma] (diploma_RN, studName, diplomaForm_SN, diploma_supplement_form_SN, diplomaIssue_Date, trainingDirection_code, trainingDirection_Name, assignedQualification_Name, honors, stateCommissionProtocol_Date, graduateExpulsionOrder_Date, diploma_status,admission_Year, graduation_Year, passport, student_signature, management_signature) VALUES (@diploma_RN, @studName, @diplomaForm_SN, @diploma_supplement_form_SN, @diplomaIssue_Date, @trainingDirection_code, @trainingDirection_Name, @assignedQualification_Name, @honors, @stateCommissionProtocol_Date, @graduateExpulsionOrder_Date, @diploma_status, @admission_Year, @graduation_Year, @passport, @student_signature, @management_signature)", sqlConnection);
@@ -100,10 +103,13 @@ namespace WindowsFormsApp1
             passport_textBoxAdd.Text = null;
             student_signature_comboBoxAdd.Text = null;
             managment_signature_comboBoxAdd.Text = null;
+
+            sqlConnection.Close();
         }
 
         private void button2_Click(object sender, EventArgs e) //Кнопка "Поиск"
         {
+            sqlConnection.Open();
             SqlDataAdapter dataAdapter = new SqlDataAdapter(
                 textBox4.Text,
                 sqlConnection);
@@ -113,10 +119,13 @@ namespace WindowsFormsApp1
             dataAdapter.Fill(dataSet);
 
             dataGridView1.DataSource = dataSet.Tables[0];
+
+            sqlConnection.Close();
         }
 
         private void button3_Click(object sender, EventArgs e) //Кнопка "Поиск" (2)
         {
+            sqlConnection.Open();
 
             SqlDataAdapter dataAdapter = new SqlDataAdapter(
                 "SELECT * FROM KGEU_Diploma",
@@ -127,6 +136,8 @@ namespace WindowsFormsApp1
             dataAdapter.Fill(dataSet);
 
             dataGridView4.DataSource = dataSet.Tables[0];
+
+            sqlConnection.Close();
         }
 
         //Фильтрация
@@ -178,6 +189,8 @@ namespace WindowsFormsApp1
 
         private void открытьToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            sqlConnection.Open();
+
             try
             {
                 DialogResult dialogResult = openFileDialog1.ShowDialog();
@@ -197,6 +210,8 @@ namespace WindowsFormsApp1
             {
                 MessageBox.Show(ex.Message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
+            sqlConnection.Close();
         }
          
         private void OpenExcelFile(string path)
@@ -230,7 +245,7 @@ namespace WindowsFormsApp1
 
         //Создание Excel файла и заполнение через dataGridView2 (вкладка поиск)
         private void Export_button_Click(object sender, EventArgs e)
-        {
+        {  
             Excel.Application excelApp = new Excel.Application();
             excelApp.Workbooks.Add();
             Excel.Worksheet ws = (Excel.Worksheet)excelApp.ActiveSheet;
@@ -244,6 +259,7 @@ namespace WindowsFormsApp1
                     //MessageBox.Show(data[j, i].ToString(), j.ToString());
                     ws.Cells[i+7 , j +5] = dataGridView2[j, i].Value.ToString();
                 }
+
             }
 
             // с какой строки начинаем вставлять данные из dgv
@@ -267,6 +283,7 @@ namespace WindowsFormsApp1
 
         private void update_button_Click(object sender, EventArgs e)
         {
+            sqlConnection.Open();
             //Обновление данных в "Поиске" (dataGridView2)
             sqlConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["DBConnectionString"].ConnectionString);
 
@@ -279,10 +296,89 @@ namespace WindowsFormsApp1
             dataAdapter.Fill(db);
 
             dataGridView2.DataSource = db.Tables[0];
+
+            sqlConnection.Close();
         }
 
         private void WritingToTheDataBase_button_Click(object sender, EventArgs e)
         {
+            //Заполнение БД
+            //string validformat = "dd-MM-yyyy";
+            sqlConnection.Open();
+
+            SqlCommand command = new SqlCommand(
+              $"INSERT INTO [KGEU_Diploma] (diploma_RN, studName, diplomaForm_SN, diploma_supplement_form_SN, diplomaIssue_Date, trainingDirection_code, trainingDirection_Name, assignedQualification_Name, honors, stateCommissionProtocol_Date, graduateExpulsionOrder_Date, diploma_status,admission_Year, graduation_Year, passport, student_signature, management_signature) VALUES (@diploma_RN, @studName, @diplomaForm_SN, @diploma_supplement_form_SN, @diplomaIssue_Date, @trainingDirection_code, @trainingDirection_Name, @assignedQualification_Name, @honors, @stateCommissionProtocol_Date, @graduateExpulsionOrder_Date, @diploma_status, @admission_Year, @graduation_Year, @passport, @student_signature, @management_signature)", sqlConnection);
+    
+            command.Parameters.Add("@diploma_RN", SqlDbType.NVarChar);
+            command.Parameters.Add("@studName", SqlDbType.NVarChar);
+            command.Parameters.Add("@diplomaForm_SN", SqlDbType.NChar);
+            command.Parameters.Add("@diploma_supplement_form_SN", SqlDbType.NChar);
+            command.Parameters.Add("@diplomaIssue_Date", SqlDbType.NVarChar);
+            command.Parameters.Add("@trainingDirection_code", SqlDbType.NChar);
+            command.Parameters.Add("@trainingDirection_Name", SqlDbType.NVarChar);
+            command.Parameters.Add("@assignedQualification_Name", SqlDbType.NVarChar);
+            command.Parameters.Add("@honors", SqlDbType.NVarChar);
+            command.Parameters.Add("@stateCommissionProtocol_Date", SqlDbType.NVarChar);
+            command.Parameters.Add("@graduateExpulsionOrder_Date", SqlDbType.NVarChar);
+            command.Parameters.Add("@diploma_status", SqlDbType.NVarChar);
+            command.Parameters.Add("@admission_Year", SqlDbType.NVarChar);
+            command.Parameters.Add("@graduation_Year", SqlDbType.NVarChar);
+            command.Parameters.Add("@passport", SqlDbType.NVarChar);
+            command.Parameters.Add("@student_signature", SqlDbType.NVarChar);
+            command.Parameters.Add("@management_signature", SqlDbType.NVarChar);
+
+            int a = 0;
+            try
+            {
+                for (int i = 0; i < dataGridView3.Rows.Count - 1; i++)
+                {
+                    a = i;
+                    command.Parameters["@diploma_RN"].Value = dataGridView3["diploma_RN", i].Value;
+                    command.Parameters["@studName"].Value = dataGridView3["studName", i].Value;
+                    command.Parameters["@diplomaForm_SN"].Value = dataGridView3["diplomaForm_SN", i].Value;
+                    command.Parameters["@diploma_supplement_form_SN"].Value = dataGridView3["diploma_supplement_form_SN", i].Value;
+                    command.Parameters["@diplomaIssue_Date"].Value = dataGridView3["diplomaIssue_Date", i].Value;
+                    command.Parameters["@trainingDirection_code"].Value = dataGridView3["trainingDirection_code", i].Value;
+                    command.Parameters["@trainingDirection_Name"].Value = dataGridView3["trainingDirection_Name", i].Value;
+                    command.Parameters["@assignedQualification_Name"].Value = dataGridView3["assignedQualification_Name", i].Value;
+                    command.Parameters["@honors"].Value = dataGridView3["honors", i].Value;
+                    command.Parameters["@stateCommissionProtocol_Date"].Value = dataGridView3["stateCommissionProtocol_Date", i].Value;
+                    command.Parameters["@graduateExpulsionOrder_Date"].Value = dataGridView3["graduateExpulsionOrder_Date", i].Value;
+                    command.Parameters["@diploma_status"].Value = dataGridView3["diploma_status", i].Value;
+                    command.Parameters["@admission_Year"].Value = dataGridView3["admission_Year", i].Value;
+                    command.Parameters["@graduation_Year"].Value = dataGridView3["graduation_Year", i].Value;
+                    command.Parameters["@passport"].Value = dataGridView3["passport", i].Value;
+                    command.Parameters["@student_signature"].Value = dataGridView3["student_signature", i].Value;
+                    command.Parameters["@management_signature"].Value = dataGridView3["management_signature", i].Value;
+                    command.ExecuteNonQuery();
+                }
+
+                MessageBox.Show(command.ExecuteNonQuery().ToString());
+            }
+            catch
+            {
+                object b = dataGridView3["diploma_RN", a].Value;
+                MessageBox.Show($"Человек с номером {b} уже существует в БД"); ;
+            }
+            finally
+            {
+                sqlConnection.Close();
+            }
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Excel.Application crFile = new Excel.Application();
+            crFile.Workbooks.Add();
+            Excel.Worksheet sheet = (Excel.Worksheet)crFile.ActiveSheet;
+
+            string[,] nColimns = new string[,] { { "", "diploma_RN", "studName", "diplomaForm_SN", "diploma_supplement_form_SN",  "diplomaIssue_Date", "trainingDirection_code", "trainingDirection_Name", "assignedQualification_Name", "honors", "stateCommissionProtocol_Date", "graduateExpulsionOrder_Date", "diploma_status", "admission_Year", "graduation_Year", "passport", "student_signature", "management_signature"} };
+
+            for (int i = 1; i< nColimns.Length-1; i++)
+                sheet.Cells[1, i] = nColimns[0, i];
+
+            crFile.Visible = true;
 
         }
     }

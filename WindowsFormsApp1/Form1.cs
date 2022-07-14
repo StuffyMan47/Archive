@@ -63,7 +63,7 @@ namespace WindowsFormsApp1
             //Заполнение БД
             //string validformat = "dd-MM-yyyy";
             string DiplomaIssue_Date = diploma_issue_dateTimePickerAdd.Text;
-            string Admission_Year = diploma_status_comboBoxAdd.Text;
+            string Admission_Year = admission_Year_dateTimePickerAdd.Text;
             string Graduation_Year = graduation_Year_dateTimePickerAdd.Text;
 
             command.Parameters.AddWithValue("diploma_RN", diploma_RN_textBoxAdd.Text);
@@ -234,50 +234,66 @@ namespace WindowsFormsApp1
             Excel.Application excelApp = new Excel.Application();
             excelApp.Workbooks.Add();
             Excel.Worksheet ws = (Excel.Worksheet)excelApp.ActiveSheet;
-            string[,] data = new string[17, 1];
+            ws.Name = "Отчёт";
 
-            for (int i=0; i<dataGridView2.RowCount-1; i++)
-            {
-                for (int j=0; j<dataGridView2.ColumnCount; j++)
-                {
-                    data[j, i] = dataGridView2[j, i].Value.ToString();
-                    //MessageBox.Show(data[j, i].ToString(), j.ToString());
-                    ws.Cells[i+7 , j +5] = dataGridView2[j, i].Value.ToString();
-                }
-            }
+            //Разметка Ecxel документа в оглавлении документа
+            Excel.Range rangeHeading = ws.get_Range("A1", "G1");
+            rangeHeading.Cells.Font.Name = "Times New Roman";
+            rangeHeading.Cells.Font.Size = 14;
+            rangeHeading.Merge(Type.Missing);
+            rangeHeading.VerticalAlignment = Excel.XlVAlign.xlVAlignCenter;
+            rangeHeading.HorizontalAlignment = Excel.XlVAlign.xlVAlignCenter;
+            rangeHeading.Value = "Подтверждение о наличии диплома о высшем образовании";
 
-            // с какой строки начинаем вставлять данные из dgv
-            //int iRowCount = 3;
+            //Разметка Ecxel документа в оглавлении таблицы
+            Excel.Range rangeMain = ws.get_Range("A5", "F5");
+            rangeMain.Cells.Font.Name = "Times New Roman";
+            rangeMain.Cells.Font.Size = 10;
+            rangeMain.VerticalAlignment = Excel.XlVAlign.xlVAlignCenter;
+            rangeMain.HorizontalAlignment = Excel.XlVAlign.xlVAlignCenter;
+            Excel.Range rangeColorMain = rangeMain;
+            rangeColorMain.Borders.Color = ColorTranslator.ToOle(Color.Black);
+            Excel.Range rowHeightMain = rangeMain;
+            rowHeightMain.EntireRow.RowHeight = 70;
+            ws.Cells[5, 1] = "Фамилия, имя, отчество";
+            ws.Cells[5, 2] = "Год постуаления";
+            ws.Cells[5, 3] = " Год выпуска ";
+            ws.Cells[5, 4] = "Дата и номер протокола \nгосударственной комиссии";
+            ws.Cells[5, 5] = "Код направления";
+            ws.Cells[5, 6] = "Наименование направления подготовки";
 
-            //for (int i = 0; i < ws.Rows.Count; i++)
-            //{
-                //excelApp.Cells[iRowCount, 1] = ws.Rows[i].Cells[0].Value.ToString();
-                //excelApp.Cells[iRowCount, 2] = ws.Rows[i].Cells[1].Value.ToString();
-                //excelApp.Cells[iRowCount, 3] = ws.Rows[i].Cells[2].Value.ToString();
-                //excelApp.Cells[iRowCount, 4] = ws.Rows[i].Cells[3].Value.ToString();
+            //Разметка Ecxel документа в заполняемой зоне (таблица)
+            Excel.Range rangeTable = ws.get_Range("A6", "F6");
+            rangeTable.Cells.Font.Name = "Times New Roman";
+            rangeTable.Cells.Font.Size = 10;
+            rangeTable.VerticalAlignment = Excel.XlVAlign.xlVAlignCenter;
+            rangeTable.HorizontalAlignment = Excel.XlVAlign.xlVAlignCenter;
+            Excel.Range rangeColorTable = rangeTable;
+            rangeColorTable.Borders.Color = ColorTranslator.ToOle(Color.Black);
+            Excel.Range rowHeightTable = rangeTable;
+            rowHeightTable.EntireRow.RowHeight = 70;
+            rangeTable.EntireColumn.AutoFit();
 
-                //iRowCount++;
+            //Заполнение полей таблицы данными из БД
+            ws.Cells[6, 1] = dataGridView2[1, 0].Value.ToString();
+            ws.Cells[6, 2] = dataGridView2[12, 0].Value.ToString();
+            ws.Cells[6, 3] = dataGridView2[13, 0].Value.ToString();
+            ws.Cells[6, 4] = dataGridView2[9, 0].Value.ToString();
+            ws.Cells[6, 5] = dataGridView2[5, 0].Value.ToString();
+            ws.Cells[6, 6] = dataGridView2[6, 0].Value.ToString();
 
-                // Добавляем строчку ниже
-                //var cellsDRnr = ws.get_Range("A" + iRowCount, "A" + iRowCount);
-                //cellsDRnr.EntireRow.Insert(-4121, m_objOpt);
-                excelApp.Visible = true;
-            //}
+            excelApp.Visible = true;
         }
 
         private void update_button_Click(object sender, EventArgs e)
         {
             //Обновление данных в "Поиске" (dataGridView2)
             sqlConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["DBConnectionString"].ConnectionString);
-
             sqlConnection.Open();
 
             SqlDataAdapter dataAdapter = new SqlDataAdapter("SELECT * FROM KGEU_Diploma", sqlConnection);
-
             DataSet db = new DataSet();
-
             dataAdapter.Fill(db);
-
             dataGridView2.DataSource = db.Tables[0];
         }
 

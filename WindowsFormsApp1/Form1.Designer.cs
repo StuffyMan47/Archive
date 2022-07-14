@@ -30,88 +30,88 @@
         {
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.файлToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.открытьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.button1 = new System.Windows.Forms.Button();
+            this.WritingToTheDataBase_button = new System.Windows.Forms.Button();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripComboBox1 = new System.Windows.Forms.ToolStripComboBox();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.WritingToTheDataBase_button = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.файлToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.открытьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.button2 = new System.Windows.Forms.Button();
+            this.textBox4 = new System.Windows.Forms.TextBox();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.dataGridView4 = new System.Windows.Forms.DataGridView();
             this.button3 = new System.Windows.Forms.Button();
+            this.dataGridView4 = new System.Windows.Forms.DataGridView();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.label18 = new System.Windows.Forms.Label();
-            this.traningDC_textBoxS = new System.Windows.Forms.TextBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.diploma_issue_dateTimePickerS = new System.Windows.Forms.DateTimePicker();
-            this.stud_name_textBoxS = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.assignedQualification_Name_textBoxS = new System.Windows.Forms.TextBox();
-            this.traningDN_textBoxS = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.honors_comboBoxS = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.passport_textBoxS = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.Export_button = new System.Windows.Forms.Button();
-            this.label22 = new System.Windows.Forms.Label();
-            this.update_button = new System.Windows.Forms.Button();
             this.diploma_RN_textBoxS = new System.Windows.Forms.TextBox();
+            this.update_button = new System.Windows.Forms.Button();
+            this.label22 = new System.Windows.Forms.Label();
+            this.Export_button = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.passport_textBoxS = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.honors_comboBoxS = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.traningDN_textBoxS = new System.Windows.Forms.TextBox();
+            this.assignedQualification_Name_textBoxS = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.stud_name_textBoxS = new System.Windows.Forms.TextBox();
+            this.diploma_issue_dateTimePickerS = new System.Windows.Forms.DateTimePicker();
+            this.label19 = new System.Windows.Forms.Label();
+            this.traningDC_textBoxS = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.traningDC_textBoxAdd = new System.Windows.Forms.TextBox();
-            this.assignedQualification_Name_textBoxAdd = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.honors_comboBoxAdd = new System.Windows.Forms.ComboBox();
-            this.diploma_issue_dateTimePickerAdd = new System.Windows.Forms.DateTimePicker();
-            this.label13 = new System.Windows.Forms.Label();
-            this.stateCommissionProtocol_Date_textBoxAdd = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.graduationExplusionOrder_Date_textBoxAdd = new System.Windows.Forms.TextBox();
-            this.diploma_sup_form_SN_textBoxAdd = new System.Windows.Forms.TextBox();
-            this.traningDN_textBoxAdd = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.diplomaForm_SN_textBoxAdd = new System.Windows.Forms.TextBox();
-            this.diploma_status_comboBoxAdd = new System.Windows.Forms.ComboBox();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.admission_Year_dateTimePickerAdd = new System.Windows.Forms.DateTimePicker();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.graduation_Year_dateTimePickerAdd = new System.Windows.Forms.DateTimePicker();
-            this.stud_name_textBoxAdd = new System.Windows.Forms.TextBox();
-            this.label24 = new System.Windows.Forms.Label();
-            this.passport_textBoxAdd = new System.Windows.Forms.TextBox();
-            this.diploma_RN_textBoxAdd = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.student_signature_comboBoxAdd = new System.Windows.Forms.ComboBox();
-            this.label25 = new System.Windows.Forms.Label();
-            this.managment_signature_comboBoxAdd = new System.Windows.Forms.ComboBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.add_student_button = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
+            this.add_student_button = new System.Windows.Forms.Button();
+            this.label16 = new System.Windows.Forms.Label();
+            this.managment_signature_comboBoxAdd = new System.Windows.Forms.ComboBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.student_signature_comboBoxAdd = new System.Windows.Forms.ComboBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.diploma_RN_textBoxAdd = new System.Windows.Forms.TextBox();
+            this.passport_textBoxAdd = new System.Windows.Forms.TextBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.stud_name_textBoxAdd = new System.Windows.Forms.TextBox();
+            this.graduation_Year_dateTimePickerAdd = new System.Windows.Forms.DateTimePicker();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.admission_Year_dateTimePickerAdd = new System.Windows.Forms.DateTimePicker();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.diploma_status_comboBoxAdd = new System.Windows.Forms.ComboBox();
+            this.diplomaForm_SN_textBoxAdd = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.traningDN_textBoxAdd = new System.Windows.Forms.TextBox();
+            this.diploma_sup_form_SN_textBoxAdd = new System.Windows.Forms.TextBox();
+            this.graduationExplusionOrder_Date_textBoxAdd = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.stateCommissionProtocol_Date_textBoxAdd = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.diploma_issue_dateTimePickerAdd = new System.Windows.Forms.DateTimePicker();
+            this.honors_comboBoxAdd = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.assignedQualification_Name_textBoxAdd = new System.Windows.Forms.TextBox();
+            this.traningDC_textBoxAdd = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage3.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
-            this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            this.toolStrip1.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -120,8 +120,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.tabPage6.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.tableLayoutPanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.tabPage1.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -146,30 +146,35 @@
             this.tabPage3.Text = "Excel";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // menuStrip1
+            // button1
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.файлToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(792, 24);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
+            this.button1.Location = new System.Drawing.Point(629, 24);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(112, 23);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Создать файл";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // файлToolStripMenuItem
+            // WritingToTheDataBase_button
             // 
-            this.файлToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.открытьToolStripMenuItem});
-            this.файлToolStripMenuItem.Name = "файлToolStripMenuItem";
-            this.файлToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
-            this.файлToolStripMenuItem.Text = "Файл...";
+            this.WritingToTheDataBase_button.Enabled = false;
+            this.WritingToTheDataBase_button.Location = new System.Drawing.Point(175, 24);
+            this.WritingToTheDataBase_button.Name = "WritingToTheDataBase_button";
+            this.WritingToTheDataBase_button.Size = new System.Drawing.Size(103, 25);
+            this.WritingToTheDataBase_button.TabIndex = 3;
+            this.WritingToTheDataBase_button.Text = "Записать в базу данных";
+            this.WritingToTheDataBase_button.UseVisualStyleBackColor = true;
+            this.WritingToTheDataBase_button.Click += new System.EventHandler(this.WritingToTheDataBase_button_Click);
             // 
-            // открытьToolStripMenuItem
+            // dataGridView3
             // 
-            this.открытьToolStripMenuItem.Name = "открытьToolStripMenuItem";
-            this.открытьToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
-            this.открытьToolStripMenuItem.Text = "Открыть";
-            this.открытьToolStripMenuItem.Click += new System.EventHandler(this.открытьToolStripMenuItem_Click);
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView3.Location = new System.Drawing.Point(0, 49);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.Size = new System.Drawing.Size(792, 467);
+            this.dataGridView3.TabIndex = 2;
             // 
             // toolStrip1
             // 
@@ -194,34 +199,30 @@
             this.toolStripComboBox1.Size = new System.Drawing.Size(121, 25);
             this.toolStripComboBox1.SelectedIndexChanged += new System.EventHandler(this.toolStripComboBox1_SelectedIndexChanged);
             // 
-            // dataGridView3
+            // menuStrip1
             // 
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView3.Location = new System.Drawing.Point(0, 49);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(792, 467);
-            this.dataGridView3.TabIndex = 2;
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.файлToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(792, 24);
+            this.menuStrip1.TabIndex = 0;
+            this.menuStrip1.Text = "menuStrip1";
             // 
-            // WritingToTheDataBase_button
+            // файлToolStripMenuItem
             // 
-            this.WritingToTheDataBase_button.Location = new System.Drawing.Point(175, 24);
-            this.WritingToTheDataBase_button.Name = "WritingToTheDataBase_button";
-            this.WritingToTheDataBase_button.Size = new System.Drawing.Size(103, 25);
-            this.WritingToTheDataBase_button.TabIndex = 3;
-            this.WritingToTheDataBase_button.Text = "Записать в базу данных";
-            this.WritingToTheDataBase_button.UseVisualStyleBackColor = true;
-            this.WritingToTheDataBase_button.Click += new System.EventHandler(this.WritingToTheDataBase_button_Click);
+            this.файлToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.открытьToolStripMenuItem});
+            this.файлToolStripMenuItem.Name = "файлToolStripMenuItem";
+            this.файлToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
+            this.файлToolStripMenuItem.Text = "Файл...";
             // 
-            // button1
+            // открытьToolStripMenuItem
             // 
-            this.button1.Location = new System.Drawing.Point(629, 24);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(112, 23);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Создать файл";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.открытьToolStripMenuItem.Name = "открытьToolStripMenuItem";
+            this.открытьToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.открытьToolStripMenuItem.Text = "Открыть";
+            this.открытьToolStripMenuItem.Click += new System.EventHandler(this.открытьToolStripMenuItem_Click);
             // 
             // tabPage2
             // 
@@ -251,13 +252,14 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(786, 510);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // textBox4
+            // dataGridView1
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox4.Location = new System.Drawing.Point(3, 411);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(778, 29);
-            this.textBox4.TabIndex = 2;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(3, 3);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(780, 402);
+            this.dataGridView1.TabIndex = 1;
             // 
             // button2
             // 
@@ -269,14 +271,15 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // dataGridView1
+            // textBox4
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 3);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(780, 402);
-            this.dataGridView1.TabIndex = 1;
+            this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox4.Location = new System.Drawing.Point(3, 427);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(780, 29);
+            this.textBox4.TabIndex = 2;
             // 
             // tabPage5
             // 
@@ -303,6 +306,16 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(792, 516);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(3, 467);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(96, 32);
+            this.button3.TabIndex = 1;
+            this.button3.Text = "Обновление";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // dataGridView4
             // 
             this.dataGridView4.AllowUserToAddRows = false;
@@ -314,16 +327,6 @@
             this.dataGridView4.ReadOnly = true;
             this.dataGridView4.Size = new System.Drawing.Size(786, 458);
             this.dataGridView4.TabIndex = 2;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(3, 467);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(96, 32);
-            this.button3.TabIndex = 1;
-            this.button3.Text = "Обновление";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // tabPage6
             // 
@@ -351,17 +354,6 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(792, 516);
             this.tableLayoutPanel3.TabIndex = 11;
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView2.Location = new System.Drawing.Point(333, 3);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-            this.dataGridView2.Size = new System.Drawing.Size(456, 510);
-            this.dataGridView2.TabIndex = 1;
-            this.dataGridView2.TabStop = false;
             // 
             // tableLayoutPanel4
             // 
@@ -404,89 +396,68 @@
             this.tableLayoutPanel4.Size = new System.Drawing.Size(324, 510);
             this.tableLayoutPanel4.TabIndex = 0;
             // 
-            // label18
+            // diploma_RN_textBoxS
             // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(3, 78);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(156, 13);
-            this.label18.TabIndex = 0;
-            this.label18.Text = "Код направления подготовки";
+            this.diploma_RN_textBoxS.Location = new System.Drawing.Point(165, 3);
+            this.diploma_RN_textBoxS.Name = "diploma_RN_textBoxS";
+            this.diploma_RN_textBoxS.Size = new System.Drawing.Size(153, 20);
+            this.diploma_RN_textBoxS.TabIndex = 1;
+            this.diploma_RN_textBoxS.TextChanged += new System.EventHandler(this.diploma_RN_textBoxS_TextChanged);
             // 
-            // traningDC_textBoxS
+            // update_button
             // 
-            this.traningDC_textBoxS.Location = new System.Drawing.Point(165, 81);
-            this.traningDC_textBoxS.Name = "traningDC_textBoxS";
-            this.traningDC_textBoxS.Size = new System.Drawing.Size(153, 20);
-            this.traningDC_textBoxS.TabIndex = 4;
-            this.traningDC_textBoxS.TextChanged += new System.EventHandler(this.traningDC_textBoxS_TextChanged);
+            this.update_button.Location = new System.Drawing.Point(3, 212);
+            this.update_button.Name = "update_button";
+            this.update_button.Size = new System.Drawing.Size(75, 23);
+            this.update_button.TabIndex = 10;
+            this.update_button.Text = "Обновить";
+            this.update_button.UseVisualStyleBackColor = true;
+            this.update_button.Click += new System.EventHandler(this.update_button_Click);
             // 
-            // label19
+            // label22
             // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(3, 52);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(120, 13);
-            this.label19.TabIndex = 0;
-            this.label19.Text = "Дата выдачи диплома";
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(3, 0);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(107, 13);
+            this.label22.TabIndex = 0;
+            this.label22.Text = "Рег номер диплома";
             // 
-            // diploma_issue_dateTimePickerS
+            // Export_button
             // 
-            this.diploma_issue_dateTimePickerS.Location = new System.Drawing.Point(165, 55);
-            this.diploma_issue_dateTimePickerS.Name = "diploma_issue_dateTimePickerS";
-            this.diploma_issue_dateTimePickerS.Size = new System.Drawing.Size(153, 20);
-            this.diploma_issue_dateTimePickerS.TabIndex = 3;
+            this.Export_button.Location = new System.Drawing.Point(165, 212);
+            this.Export_button.Name = "Export_button";
+            this.Export_button.Size = new System.Drawing.Size(75, 23);
+            this.Export_button.TabIndex = 9;
+            this.Export_button.Text = "Экспорт";
+            this.Export_button.UseVisualStyleBackColor = true;
+            this.Export_button.Click += new System.EventHandler(this.Export_button_Click);
             // 
-            // stud_name_textBoxS
+            // label2
             // 
-            this.stud_name_textBoxS.Location = new System.Drawing.Point(165, 29);
-            this.stud_name_textBoxS.Name = "stud_name_textBoxS";
-            this.stud_name_textBoxS.Size = new System.Drawing.Size(153, 20);
-            this.stud_name_textBoxS.TabIndex = 2;
-            this.stud_name_textBoxS.TextChanged += new System.EventHandler(this.stud_name_textBoxS_TextChanged);
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(3, 183);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(111, 13);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Паспортные данные";
             // 
-            // label4
+            // passport_textBoxS
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(3, 130);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(82, 13);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Квалификация";
+            this.passport_textBoxS.Location = new System.Drawing.Point(165, 186);
+            this.passport_textBoxS.Name = "passport_textBoxS";
+            this.passport_textBoxS.Size = new System.Drawing.Size(153, 20);
+            this.passport_textBoxS.TabIndex = 8;
+            this.passport_textBoxS.TextChanged += new System.EventHandler(this.passport_textBoxS_TextChanged);
             // 
-            // label20
+            // label1
             // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(3, 26);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(34, 13);
-            this.label20.TabIndex = 0;
-            this.label20.Text = "ФИО";
-            // 
-            // assignedQualification_Name_textBoxS
-            // 
-            this.assignedQualification_Name_textBoxS.Location = new System.Drawing.Point(165, 133);
-            this.assignedQualification_Name_textBoxS.Name = "assignedQualification_Name_textBoxS";
-            this.assignedQualification_Name_textBoxS.Size = new System.Drawing.Size(153, 20);
-            this.assignedQualification_Name_textBoxS.TabIndex = 6;
-            this.assignedQualification_Name_textBoxS.TextChanged += new System.EventHandler(this.assignedQualification_Name_textBoxS_TextChanged);
-            // 
-            // traningDN_textBoxS
-            // 
-            this.traningDN_textBoxS.Location = new System.Drawing.Point(165, 107);
-            this.traningDN_textBoxS.Name = "traningDN_textBoxS";
-            this.traningDN_textBoxS.Size = new System.Drawing.Size(153, 20);
-            this.traningDN_textBoxS.TabIndex = 5;
-            this.traningDN_textBoxS.TextChanged += new System.EventHandler(this.traningDN_textBoxS_TextChanged);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(3, 156);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(108, 13);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Диплом с отличием";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(3, 104);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(136, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Направление подготовки";
             // 
             // honors_comboBoxS
             // 
@@ -501,68 +472,100 @@
             this.honors_comboBoxS.TabIndex = 7;
             this.honors_comboBoxS.SelectionChangeCommitted += new System.EventHandler(this.honors_comboBoxS_SelectionChangeCommitted);
             // 
-            // label1
+            // label3
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(3, 104);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(136, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Направление подготовки";
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(3, 156);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(108, 13);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Диплом с отличием";
             // 
-            // passport_textBoxS
+            // traningDN_textBoxS
             // 
-            this.passport_textBoxS.Location = new System.Drawing.Point(165, 186);
-            this.passport_textBoxS.Name = "passport_textBoxS";
-            this.passport_textBoxS.Size = new System.Drawing.Size(153, 20);
-            this.passport_textBoxS.TabIndex = 8;
-            this.passport_textBoxS.TextChanged += new System.EventHandler(this.passport_textBoxS_TextChanged);
+            this.traningDN_textBoxS.Location = new System.Drawing.Point(165, 107);
+            this.traningDN_textBoxS.Name = "traningDN_textBoxS";
+            this.traningDN_textBoxS.Size = new System.Drawing.Size(153, 20);
+            this.traningDN_textBoxS.TabIndex = 5;
+            this.traningDN_textBoxS.TextChanged += new System.EventHandler(this.traningDN_textBoxS_TextChanged);
             // 
-            // label2
+            // assignedQualification_Name_textBoxS
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(3, 183);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(111, 13);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Паспортные данные";
+            this.assignedQualification_Name_textBoxS.Location = new System.Drawing.Point(165, 133);
+            this.assignedQualification_Name_textBoxS.Name = "assignedQualification_Name_textBoxS";
+            this.assignedQualification_Name_textBoxS.Size = new System.Drawing.Size(153, 20);
+            this.assignedQualification_Name_textBoxS.TabIndex = 6;
+            this.assignedQualification_Name_textBoxS.TextChanged += new System.EventHandler(this.assignedQualification_Name_textBoxS_TextChanged);
             // 
-            // Export_button
+            // label20
             // 
-            this.Export_button.Location = new System.Drawing.Point(165, 212);
-            this.Export_button.Name = "Export_button";
-            this.Export_button.Size = new System.Drawing.Size(75, 23);
-            this.Export_button.TabIndex = 9;
-            this.Export_button.Text = "Экспорт";
-            this.Export_button.UseVisualStyleBackColor = true;
-            this.Export_button.Click += new System.EventHandler(this.Export_button_Click);
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(3, 26);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(34, 13);
+            this.label20.TabIndex = 0;
+            this.label20.Text = "ФИО";
             // 
-            // label22
+            // label4
             // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(3, 0);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(107, 13);
-            this.label22.TabIndex = 0;
-            this.label22.Text = "Рег номер диплома";
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(3, 130);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(82, 13);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Квалификация";
             // 
-            // update_button
+            // stud_name_textBoxS
             // 
-            this.update_button.Location = new System.Drawing.Point(3, 212);
-            this.update_button.Name = "update_button";
-            this.update_button.Size = new System.Drawing.Size(75, 23);
-            this.update_button.TabIndex = 10;
-            this.update_button.Text = "Обновить";
-            this.update_button.UseVisualStyleBackColor = true;
-            this.update_button.Click += new System.EventHandler(this.update_button_Click);
+            this.stud_name_textBoxS.Location = new System.Drawing.Point(165, 29);
+            this.stud_name_textBoxS.Name = "stud_name_textBoxS";
+            this.stud_name_textBoxS.Size = new System.Drawing.Size(153, 20);
+            this.stud_name_textBoxS.TabIndex = 2;
+            this.stud_name_textBoxS.TextChanged += new System.EventHandler(this.stud_name_textBoxS_TextChanged);
             // 
-            // diploma_RN_textBoxS
+            // diploma_issue_dateTimePickerS
             // 
-            this.diploma_RN_textBoxS.Location = new System.Drawing.Point(165, 3);
-            this.diploma_RN_textBoxS.Name = "diploma_RN_textBoxS";
-            this.diploma_RN_textBoxS.Size = new System.Drawing.Size(153, 20);
-            this.diploma_RN_textBoxS.TabIndex = 1;
-            this.diploma_RN_textBoxS.TextChanged += new System.EventHandler(this.diploma_RN_textBoxS_TextChanged);
+            this.diploma_issue_dateTimePickerS.Location = new System.Drawing.Point(165, 55);
+            this.diploma_issue_dateTimePickerS.Name = "diploma_issue_dateTimePickerS";
+            this.diploma_issue_dateTimePickerS.Size = new System.Drawing.Size(153, 20);
+            this.diploma_issue_dateTimePickerS.TabIndex = 3;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(3, 52);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(120, 13);
+            this.label19.TabIndex = 0;
+            this.label19.Text = "Дата выдачи диплома";
+            // 
+            // traningDC_textBoxS
+            // 
+            this.traningDC_textBoxS.Location = new System.Drawing.Point(165, 81);
+            this.traningDC_textBoxS.Name = "traningDC_textBoxS";
+            this.traningDC_textBoxS.Size = new System.Drawing.Size(153, 20);
+            this.traningDC_textBoxS.TabIndex = 4;
+            this.traningDC_textBoxS.TextChanged += new System.EventHandler(this.traningDC_textBoxS_TextChanged);
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(3, 78);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(156, 13);
+            this.label18.TabIndex = 0;
+            this.label18.Text = "Код направления подготовки";
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView2.Location = new System.Drawing.Point(333, 3);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            this.dataGridView2.Size = new System.Drawing.Size(456, 510);
+            this.dataGridView2.TabIndex = 1;
+            this.dataGridView2.TabStop = false;
             // 
             // tabPage1
             // 
@@ -640,145 +643,155 @@
             this.tableLayoutPanel5.Size = new System.Drawing.Size(786, 510);
             this.tableLayoutPanel5.TabIndex = 24;
             // 
-            // label11
+            // label5
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(3, 208);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(108, 13);
-            this.label11.TabIndex = 0;
-            this.label11.Text = "Диплом с отличием";
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(3, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(180, 13);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Регистрационный номер диплома";
             // 
-            // label10
+            // add_student_button
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(3, 182);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(235, 13);
-            this.label10.TabIndex = 0;
-            this.label10.Text = "Наименование присвоенной квалификацией";
+            this.add_student_button.Location = new System.Drawing.Point(285, 449);
+            this.add_student_button.Name = "add_student_button";
+            this.add_student_button.Size = new System.Drawing.Size(94, 37);
+            this.add_student_button.TabIndex = 18;
+            this.add_student_button.Text = "Добавить";
+            this.add_student_button.UseVisualStyleBackColor = true;
+            this.add_student_button.Click += new System.EventHandler(this.add_student_button_Click);
             // 
-            // label12
+            // label16
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(3, 235);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(276, 13);
-            this.label12.TabIndex = 0;
-            this.label12.Text = "Дата и номер протокола государственной комиссии";
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(3, 419);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(118, 13);
+            this.label16.TabIndex = 0;
+            this.label16.Text = "Подпись руководства";
             // 
-            // traningDC_textBoxAdd
+            // managment_signature_comboBoxAdd
             // 
-            this.traningDC_textBoxAdd.Location = new System.Drawing.Point(285, 133);
-            this.traningDC_textBoxAdd.Name = "traningDC_textBoxAdd";
-            this.traningDC_textBoxAdd.Size = new System.Drawing.Size(162, 20);
-            this.traningDC_textBoxAdd.TabIndex = 6;
+            this.managment_signature_comboBoxAdd.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.managment_signature_comboBoxAdd.FormattingEnabled = true;
+            this.managment_signature_comboBoxAdd.Items.AddRange(new object[] {
+            "Имеется",
+            "Остутсвует"});
+            this.managment_signature_comboBoxAdd.Location = new System.Drawing.Point(285, 422);
+            this.managment_signature_comboBoxAdd.Name = "managment_signature_comboBoxAdd";
+            this.managment_signature_comboBoxAdd.Size = new System.Drawing.Size(162, 21);
+            this.managment_signature_comboBoxAdd.TabIndex = 17;
             // 
-            // assignedQualification_Name_textBoxAdd
+            // label25
             // 
-            this.assignedQualification_Name_textBoxAdd.Location = new System.Drawing.Point(285, 185);
-            this.assignedQualification_Name_textBoxAdd.Name = "assignedQualification_Name_textBoxAdd";
-            this.assignedQualification_Name_textBoxAdd.Size = new System.Drawing.Size(162, 20);
-            this.assignedQualification_Name_textBoxAdd.TabIndex = 8;
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(3, 340);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(71, 13);
+            this.label25.TabIndex = 0;
+            this.label25.Text = "Год выпуска";
             // 
-            // label9
+            // student_signature_comboBoxAdd
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(3, 130);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(156, 13);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "Код направления подготовки";
+            this.student_signature_comboBoxAdd.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.student_signature_comboBoxAdd.FormattingEnabled = true;
+            this.student_signature_comboBoxAdd.Items.AddRange(new object[] {
+            "Имеется",
+            "Остутсвует"});
+            this.student_signature_comboBoxAdd.Location = new System.Drawing.Point(285, 395);
+            this.student_signature_comboBoxAdd.Name = "student_signature_comboBoxAdd";
+            this.student_signature_comboBoxAdd.Size = new System.Drawing.Size(162, 21);
+            this.student_signature_comboBoxAdd.TabIndex = 16;
             // 
-            // honors_comboBoxAdd
+            // label15
             // 
-            this.honors_comboBoxAdd.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.honors_comboBoxAdd.FormattingEnabled = true;
-            this.honors_comboBoxAdd.Items.AddRange(new object[] {
-            "Да",
-            "Нет"});
-            this.honors_comboBoxAdd.Location = new System.Drawing.Point(285, 211);
-            this.honors_comboBoxAdd.Name = "honors_comboBoxAdd";
-            this.honors_comboBoxAdd.Size = new System.Drawing.Size(162, 21);
-            this.honors_comboBoxAdd.TabIndex = 9;
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(3, 392);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(218, 13);
+            this.label15.TabIndex = 0;
+            this.label15.Text = "Подпись лица, которому выдан документ";
             // 
-            // diploma_issue_dateTimePickerAdd
+            // diploma_RN_textBoxAdd
             // 
-            this.diploma_issue_dateTimePickerAdd.Location = new System.Drawing.Point(285, 107);
-            this.diploma_issue_dateTimePickerAdd.Name = "diploma_issue_dateTimePickerAdd";
-            this.diploma_issue_dateTimePickerAdd.Size = new System.Drawing.Size(162, 20);
-            this.diploma_issue_dateTimePickerAdd.TabIndex = 5;
+            this.diploma_RN_textBoxAdd.Location = new System.Drawing.Point(285, 3);
+            this.diploma_RN_textBoxAdd.Name = "diploma_RN_textBoxAdd";
+            this.diploma_RN_textBoxAdd.Size = new System.Drawing.Size(162, 20);
+            this.diploma_RN_textBoxAdd.TabIndex = 1;
             // 
-            // label13
+            // passport_textBoxAdd
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(3, 261);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(262, 13);
-            this.label13.TabIndex = 0;
-            this.label13.Text = "Дата и номер приказа об отчислении выпускника";
+            this.passport_textBoxAdd.Location = new System.Drawing.Point(285, 369);
+            this.passport_textBoxAdd.Name = "passport_textBoxAdd";
+            this.passport_textBoxAdd.Size = new System.Drawing.Size(162, 20);
+            this.passport_textBoxAdd.TabIndex = 15;
             // 
-            // stateCommissionProtocol_Date_textBoxAdd
+            // label24
             // 
-            this.stateCommissionProtocol_Date_textBoxAdd.Location = new System.Drawing.Point(285, 238);
-            this.stateCommissionProtocol_Date_textBoxAdd.Name = "stateCommissionProtocol_Date_textBoxAdd";
-            this.stateCommissionProtocol_Date_textBoxAdd.Size = new System.Drawing.Size(162, 20);
-            this.stateCommissionProtocol_Date_textBoxAdd.TabIndex = 10;
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(3, 314);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(92, 13);
+            this.label24.TabIndex = 0;
+            this.label24.Text = "Год поступления";
             // 
-            // label8
+            // stud_name_textBoxAdd
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(3, 104);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(120, 13);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "Дата выдачи диплома";
+            this.stud_name_textBoxAdd.Location = new System.Drawing.Point(285, 29);
+            this.stud_name_textBoxAdd.Name = "stud_name_textBoxAdd";
+            this.stud_name_textBoxAdd.Size = new System.Drawing.Size(162, 20);
+            this.stud_name_textBoxAdd.TabIndex = 2;
             // 
-            // graduationExplusionOrder_Date_textBoxAdd
+            // graduation_Year_dateTimePickerAdd
             // 
-            this.graduationExplusionOrder_Date_textBoxAdd.Location = new System.Drawing.Point(285, 264);
-            this.graduationExplusionOrder_Date_textBoxAdd.Name = "graduationExplusionOrder_Date_textBoxAdd";
-            this.graduationExplusionOrder_Date_textBoxAdd.Size = new System.Drawing.Size(162, 20);
-            this.graduationExplusionOrder_Date_textBoxAdd.TabIndex = 11;
+            this.graduation_Year_dateTimePickerAdd.Location = new System.Drawing.Point(285, 343);
+            this.graduation_Year_dateTimePickerAdd.Name = "graduation_Year_dateTimePickerAdd";
+            this.graduation_Year_dateTimePickerAdd.Size = new System.Drawing.Size(162, 20);
+            this.graduation_Year_dateTimePickerAdd.TabIndex = 14;
             // 
-            // diploma_sup_form_SN_textBoxAdd
+            // label14
             // 
-            this.diploma_sup_form_SN_textBoxAdd.Location = new System.Drawing.Point(285, 81);
-            this.diploma_sup_form_SN_textBoxAdd.Name = "diploma_sup_form_SN_textBoxAdd";
-            this.diploma_sup_form_SN_textBoxAdd.Size = new System.Drawing.Size(162, 20);
-            this.diploma_sup_form_SN_textBoxAdd.TabIndex = 4;
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(3, 366);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(111, 13);
+            this.label14.TabIndex = 0;
+            this.label14.Text = "Паспортные данные";
             // 
-            // traningDN_textBoxAdd
+            // label6
             // 
-            this.traningDN_textBoxAdd.Location = new System.Drawing.Point(285, 159);
-            this.traningDN_textBoxAdd.Name = "traningDN_textBoxAdd";
-            this.traningDN_textBoxAdd.Size = new System.Drawing.Size(162, 20);
-            this.traningDN_textBoxAdd.TabIndex = 7;
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(3, 26);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(34, 13);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "ФИО";
             // 
-            // label17
+            // admission_Year_dateTimePickerAdd
             // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(3, 156);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(213, 13);
-            this.label17.TabIndex = 0;
-            this.label17.Text = "Наименование направления подготовки";
+            this.admission_Year_dateTimePickerAdd.Location = new System.Drawing.Point(285, 317);
+            this.admission_Year_dateTimePickerAdd.Name = "admission_Year_dateTimePickerAdd";
+            this.admission_Year_dateTimePickerAdd.Size = new System.Drawing.Size(162, 20);
+            this.admission_Year_dateTimePickerAdd.TabIndex = 13;
             // 
-            // label21
+            // label7
             // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(3, 78);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(202, 13);
-            this.label21.TabIndex = 23;
-            this.label21.Text = "Серия и номер приложения к диплому";
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(3, 52);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(168, 13);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "Серия и номер бланка диплома";
             // 
-            // diplomaForm_SN_textBoxAdd
+            // label23
             // 
-            this.diplomaForm_SN_textBoxAdd.Location = new System.Drawing.Point(285, 55);
-            this.diplomaForm_SN_textBoxAdd.Name = "diplomaForm_SN_textBoxAdd";
-            this.diplomaForm_SN_textBoxAdd.Size = new System.Drawing.Size(162, 20);
-            this.diplomaForm_SN_textBoxAdd.TabIndex = 3;
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(3, 287);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(88, 13);
+            this.label23.TabIndex = 0;
+            this.label23.Text = "Статус диплома";
             // 
             // diploma_status_comboBoxAdd
             // 
@@ -793,155 +806,145 @@
             this.diploma_status_comboBoxAdd.Size = new System.Drawing.Size(162, 21);
             this.diploma_status_comboBoxAdd.TabIndex = 12;
             // 
-            // label23
+            // diplomaForm_SN_textBoxAdd
             // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(3, 287);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(88, 13);
-            this.label23.TabIndex = 0;
-            this.label23.Text = "Статус диплома";
+            this.diplomaForm_SN_textBoxAdd.Location = new System.Drawing.Point(285, 55);
+            this.diplomaForm_SN_textBoxAdd.Name = "diplomaForm_SN_textBoxAdd";
+            this.diplomaForm_SN_textBoxAdd.Size = new System.Drawing.Size(162, 20);
+            this.diplomaForm_SN_textBoxAdd.TabIndex = 3;
             // 
-            // label7
+            // label21
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(3, 52);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(168, 13);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "Серия и номер бланка диплома";
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(3, 78);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(202, 13);
+            this.label21.TabIndex = 23;
+            this.label21.Text = "Серия и номер приложения к диплому";
             // 
-            // admission_Year_dateTimePickerAdd
+            // label17
             // 
-            this.admission_Year_dateTimePickerAdd.Location = new System.Drawing.Point(285, 317);
-            this.admission_Year_dateTimePickerAdd.Name = "admission_Year_dateTimePickerAdd";
-            this.admission_Year_dateTimePickerAdd.Size = new System.Drawing.Size(162, 20);
-            this.admission_Year_dateTimePickerAdd.TabIndex = 13;
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(3, 156);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(213, 13);
+            this.label17.TabIndex = 0;
+            this.label17.Text = "Наименование направления подготовки";
             // 
-            // label6
+            // traningDN_textBoxAdd
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(3, 26);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(34, 13);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "ФИО";
+            this.traningDN_textBoxAdd.Location = new System.Drawing.Point(285, 159);
+            this.traningDN_textBoxAdd.Name = "traningDN_textBoxAdd";
+            this.traningDN_textBoxAdd.Size = new System.Drawing.Size(162, 20);
+            this.traningDN_textBoxAdd.TabIndex = 7;
             // 
-            // label14
+            // diploma_sup_form_SN_textBoxAdd
             // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(3, 366);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(111, 13);
-            this.label14.TabIndex = 0;
-            this.label14.Text = "Паспортные данные";
+            this.diploma_sup_form_SN_textBoxAdd.Location = new System.Drawing.Point(285, 81);
+            this.diploma_sup_form_SN_textBoxAdd.Name = "diploma_sup_form_SN_textBoxAdd";
+            this.diploma_sup_form_SN_textBoxAdd.Size = new System.Drawing.Size(162, 20);
+            this.diploma_sup_form_SN_textBoxAdd.TabIndex = 4;
             // 
-            // graduation_Year_dateTimePickerAdd
+            // graduationExplusionOrder_Date_textBoxAdd
             // 
-            this.graduation_Year_dateTimePickerAdd.Location = new System.Drawing.Point(285, 343);
-            this.graduation_Year_dateTimePickerAdd.Name = "graduation_Year_dateTimePickerAdd";
-            this.graduation_Year_dateTimePickerAdd.Size = new System.Drawing.Size(162, 20);
-            this.graduation_Year_dateTimePickerAdd.TabIndex = 14;
+            this.graduationExplusionOrder_Date_textBoxAdd.Location = new System.Drawing.Point(285, 264);
+            this.graduationExplusionOrder_Date_textBoxAdd.Name = "graduationExplusionOrder_Date_textBoxAdd";
+            this.graduationExplusionOrder_Date_textBoxAdd.Size = new System.Drawing.Size(162, 20);
+            this.graduationExplusionOrder_Date_textBoxAdd.TabIndex = 11;
             // 
-            // stud_name_textBoxAdd
+            // label8
             // 
-            this.stud_name_textBoxAdd.Location = new System.Drawing.Point(285, 29);
-            this.stud_name_textBoxAdd.Name = "stud_name_textBoxAdd";
-            this.stud_name_textBoxAdd.Size = new System.Drawing.Size(162, 20);
-            this.stud_name_textBoxAdd.TabIndex = 2;
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(3, 104);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(120, 13);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "Дата выдачи диплома";
             // 
-            // label24
+            // stateCommissionProtocol_Date_textBoxAdd
             // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(3, 314);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(92, 13);
-            this.label24.TabIndex = 0;
-            this.label24.Text = "Год поступления";
+            this.stateCommissionProtocol_Date_textBoxAdd.Location = new System.Drawing.Point(285, 238);
+            this.stateCommissionProtocol_Date_textBoxAdd.Name = "stateCommissionProtocol_Date_textBoxAdd";
+            this.stateCommissionProtocol_Date_textBoxAdd.Size = new System.Drawing.Size(162, 20);
+            this.stateCommissionProtocol_Date_textBoxAdd.TabIndex = 10;
             // 
-            // passport_textBoxAdd
+            // label13
             // 
-            this.passport_textBoxAdd.Location = new System.Drawing.Point(285, 369);
-            this.passport_textBoxAdd.Name = "passport_textBoxAdd";
-            this.passport_textBoxAdd.Size = new System.Drawing.Size(162, 20);
-            this.passport_textBoxAdd.TabIndex = 15;
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(3, 261);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(262, 13);
+            this.label13.TabIndex = 0;
+            this.label13.Text = "Дата и номер приказа об отчислении выпускника";
             // 
-            // diploma_RN_textBoxAdd
+            // diploma_issue_dateTimePickerAdd
             // 
-            this.diploma_RN_textBoxAdd.Location = new System.Drawing.Point(285, 3);
-            this.diploma_RN_textBoxAdd.Name = "diploma_RN_textBoxAdd";
-            this.diploma_RN_textBoxAdd.Size = new System.Drawing.Size(162, 20);
-            this.diploma_RN_textBoxAdd.TabIndex = 1;
+            this.diploma_issue_dateTimePickerAdd.Location = new System.Drawing.Point(285, 107);
+            this.diploma_issue_dateTimePickerAdd.Name = "diploma_issue_dateTimePickerAdd";
+            this.diploma_issue_dateTimePickerAdd.Size = new System.Drawing.Size(162, 20);
+            this.diploma_issue_dateTimePickerAdd.TabIndex = 5;
             // 
-            // label15
+            // honors_comboBoxAdd
             // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(3, 392);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(218, 13);
-            this.label15.TabIndex = 0;
-            this.label15.Text = "Подпись лица, которому выдан документ";
+            this.honors_comboBoxAdd.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.honors_comboBoxAdd.FormattingEnabled = true;
+            this.honors_comboBoxAdd.Items.AddRange(new object[] {
+            "Да",
+            "Нет"});
+            this.honors_comboBoxAdd.Location = new System.Drawing.Point(285, 211);
+            this.honors_comboBoxAdd.Name = "honors_comboBoxAdd";
+            this.honors_comboBoxAdd.Size = new System.Drawing.Size(162, 21);
+            this.honors_comboBoxAdd.TabIndex = 9;
             // 
-            // student_signature_comboBoxAdd
+            // label9
             // 
-            this.student_signature_comboBoxAdd.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.student_signature_comboBoxAdd.FormattingEnabled = true;
-            this.student_signature_comboBoxAdd.Items.AddRange(new object[] {
-            "Имеется",
-            "Остутсвует"});
-            this.student_signature_comboBoxAdd.Location = new System.Drawing.Point(285, 395);
-            this.student_signature_comboBoxAdd.Name = "student_signature_comboBoxAdd";
-            this.student_signature_comboBoxAdd.Size = new System.Drawing.Size(162, 21);
-            this.student_signature_comboBoxAdd.TabIndex = 16;
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(3, 130);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(156, 13);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "Код направления подготовки";
             // 
-            // label25
+            // assignedQualification_Name_textBoxAdd
             // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(3, 340);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(71, 13);
-            this.label25.TabIndex = 0;
-            this.label25.Text = "Год выпуска";
+            this.assignedQualification_Name_textBoxAdd.Location = new System.Drawing.Point(285, 185);
+            this.assignedQualification_Name_textBoxAdd.Name = "assignedQualification_Name_textBoxAdd";
+            this.assignedQualification_Name_textBoxAdd.Size = new System.Drawing.Size(162, 20);
+            this.assignedQualification_Name_textBoxAdd.TabIndex = 8;
             // 
-            // managment_signature_comboBoxAdd
+            // traningDC_textBoxAdd
             // 
-            this.managment_signature_comboBoxAdd.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.managment_signature_comboBoxAdd.FormattingEnabled = true;
-            this.managment_signature_comboBoxAdd.Items.AddRange(new object[] {
-            "Имеется",
-            "Остутсвует"});
-            this.managment_signature_comboBoxAdd.Location = new System.Drawing.Point(285, 422);
-            this.managment_signature_comboBoxAdd.Name = "managment_signature_comboBoxAdd";
-            this.managment_signature_comboBoxAdd.Size = new System.Drawing.Size(162, 21);
-            this.managment_signature_comboBoxAdd.TabIndex = 17;
+            this.traningDC_textBoxAdd.Location = new System.Drawing.Point(285, 133);
+            this.traningDC_textBoxAdd.Name = "traningDC_textBoxAdd";
+            this.traningDC_textBoxAdd.Size = new System.Drawing.Size(162, 20);
+            this.traningDC_textBoxAdd.TabIndex = 6;
             // 
-            // label16
+            // label12
             // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(3, 419);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(118, 13);
-            this.label16.TabIndex = 0;
-            this.label16.Text = "Подпись руководства";
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(3, 235);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(276, 13);
+            this.label12.TabIndex = 0;
+            this.label12.Text = "Дата и номер протокола государственной комиссии";
             // 
-            // add_student_button
+            // label10
             // 
-            this.add_student_button.Location = new System.Drawing.Point(285, 449);
-            this.add_student_button.Name = "add_student_button";
-            this.add_student_button.Size = new System.Drawing.Size(94, 37);
-            this.add_student_button.TabIndex = 18;
-            this.add_student_button.Text = "Добавить";
-            this.add_student_button.UseVisualStyleBackColor = true;
-            this.add_student_button.Click += new System.EventHandler(this.add_student_button_Click);
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(3, 182);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(235, 13);
+            this.label10.TabIndex = 0;
+            this.label10.Text = "Наименование присвоенной квалификацией";
             // 
-            // label5
+            // label11
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(3, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(180, 13);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Регистрационный номер диплома";
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(3, 208);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(108, 13);
+            this.label11.TabIndex = 0;
+            this.label11.Text = "Диплом с отличием";
             // 
             // tabControl1
             // 
@@ -971,11 +974,11 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
@@ -987,9 +990,9 @@
             this.tabPage6.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.tabPage1.ResumeLayout(false);
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel5.PerformLayout();

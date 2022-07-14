@@ -211,6 +211,10 @@ namespace WindowsFormsApp1
                 MessageBox.Show(ex.Message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
+            if (dataGridView3.Rows.Count > 2)
+                WritingToTheDataBase_button.Enabled = true;
+
+
             sqlConnection.Close();
         }
 

@@ -43,7 +43,7 @@ namespace WindowsFormsApp1
                     MessageBox.Show("Ошибка в подключении БД");
                 }
             }
-            
+
 
             SqlDataAdapter dataAdapter = new SqlDataAdapter("SELECT * FROM KGEU_Diploma", sqlConnection);
 
@@ -144,7 +144,7 @@ namespace WindowsFormsApp1
         //Оброботчики события изменения текста в полях.(При изменении текста в любом из полей запускается фильтрация по заполненным полям)
         //private void textBox5_TextChanged(object sender, EventArgs e)
         //{
-          //  (dataGridView2.DataSource as DataTable).DefaultView.RowFilter = string.Format($"Convert(id, 'System.String') LIKE '%{traningDN_textBoxS.Text}%' AND Name LIKE '%{passport_textBoxS.Text}%' AND Convert(id, 'System.String') LIKE '%{traningDN_textBoxS.Text}%' AND Convert(Birthday, 'System.String') LIKE '%{assignedQualification_Name_textBoxS.Text}%' AND Convert(Graduation, 'System.String') LIKE '%{traningDC_textBoxS.Text}%'");
+        //  (dataGridView2.DataSource as DataTable).DefaultView.RowFilter = string.Format($"Convert(id, 'System.String') LIKE '%{traningDN_textBoxS.Text}%' AND Name LIKE '%{passport_textBoxS.Text}%' AND Convert(id, 'System.String') LIKE '%{traningDN_textBoxS.Text}%' AND Convert(Birthday, 'System.String') LIKE '%{assignedQualification_Name_textBoxS.Text}%' AND Convert(Graduation, 'System.String') LIKE '%{traningDC_textBoxS.Text}%'");
         //}
 
         private void diploma_RN_textBoxS_TextChanged(object sender, EventArgs e)
@@ -213,7 +213,7 @@ namespace WindowsFormsApp1
 
             sqlConnection.Close();
         }
-         
+
         private void OpenExcelFile(string path)
         {
             FileStream stream = File.Open(path, FileMode.Open, FileAccess.Read);
@@ -245,19 +245,19 @@ namespace WindowsFormsApp1
 
         //Создание Excel файла и заполнение через dataGridView2 (вкладка поиск)
         private void Export_button_Click(object sender, EventArgs e)
-        {  
+        {
             Excel.Application excelApp = new Excel.Application();
             excelApp.Workbooks.Add();
             Excel.Worksheet ws = (Excel.Worksheet)excelApp.ActiveSheet;
             string[,] data = new string[17, 1];
 
-            for (int i=0; i<dataGridView2.RowCount-1; i++)
+            for (int i = 0; i < dataGridView2.RowCount - 1; i++)
             {
-                for (int j=0; j<dataGridView2.ColumnCount; j++)
+                for (int j = 0; j < dataGridView2.ColumnCount; j++)
                 {
                     data[j, i] = dataGridView2[j, i].Value.ToString();
                     //MessageBox.Show(data[j, i].ToString(), j.ToString());
-                    ws.Cells[i+7 , j +5] = dataGridView2[j, i].Value.ToString();
+                    ws.Cells[i + 7, j + 5] = dataGridView2[j, i].Value.ToString();
                 }
 
             }
@@ -267,17 +267,17 @@ namespace WindowsFormsApp1
 
             //for (int i = 0; i < ws.Rows.Count; i++)
             //{
-                //excelApp.Cells[iRowCount, 1] = ws.Rows[i].Cells[0].Value.ToString();
-                //excelApp.Cells[iRowCount, 2] = ws.Rows[i].Cells[1].Value.ToString();
-                //excelApp.Cells[iRowCount, 3] = ws.Rows[i].Cells[2].Value.ToString();
-                //excelApp.Cells[iRowCount, 4] = ws.Rows[i].Cells[3].Value.ToString();
+            //excelApp.Cells[iRowCount, 1] = ws.Rows[i].Cells[0].Value.ToString();
+            //excelApp.Cells[iRowCount, 2] = ws.Rows[i].Cells[1].Value.ToString();
+            //excelApp.Cells[iRowCount, 3] = ws.Rows[i].Cells[2].Value.ToString();
+            //excelApp.Cells[iRowCount, 4] = ws.Rows[i].Cells[3].Value.ToString();
 
-                //iRowCount++;
+            //iRowCount++;
 
-                // Добавляем строчку ниже
-                //var cellsDRnr = ws.get_Range("A" + iRowCount, "A" + iRowCount);
-                //cellsDRnr.EntireRow.Insert(-4121, m_objOpt);
-                excelApp.Visible = true;
+            // Добавляем строчку ниже
+            //var cellsDRnr = ws.get_Range("A" + iRowCount, "A" + iRowCount);
+            //cellsDRnr.EntireRow.Insert(-4121, m_objOpt);
+            excelApp.Visible = true;
             //}
         }
 
@@ -308,7 +308,7 @@ namespace WindowsFormsApp1
 
             SqlCommand command = new SqlCommand(
               $"INSERT INTO [KGEU_Diploma] (diploma_RN, studName, diplomaForm_SN, diploma_supplement_form_SN, diplomaIssue_Date, trainingDirection_code, trainingDirection_Name, assignedQualification_Name, honors, stateCommissionProtocol_Date, graduateExpulsionOrder_Date, diploma_status,admission_Year, graduation_Year, passport, student_signature, management_signature) VALUES (@diploma_RN, @studName, @diplomaForm_SN, @diploma_supplement_form_SN, @diplomaIssue_Date, @trainingDirection_code, @trainingDirection_Name, @assignedQualification_Name, @honors, @stateCommissionProtocol_Date, @graduateExpulsionOrder_Date, @diploma_status, @admission_Year, @graduation_Year, @passport, @student_signature, @management_signature)", sqlConnection);
-    
+
             command.Parameters.Add("@diploma_RN", SqlDbType.NVarChar);
             command.Parameters.Add("@studName", SqlDbType.NVarChar);
             command.Parameters.Add("@diplomaForm_SN", SqlDbType.NChar);
@@ -364,7 +364,7 @@ namespace WindowsFormsApp1
             {
                 sqlConnection.Close();
             }
-            
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -373,13 +373,18 @@ namespace WindowsFormsApp1
             crFile.Workbooks.Add();
             Excel.Worksheet sheet = (Excel.Worksheet)crFile.ActiveSheet;
 
-            string[,] nColimns = new string[,] { { "", "diploma_RN", "studName", "diplomaForm_SN", "diploma_supplement_form_SN",  "diplomaIssue_Date", "trainingDirection_code", "trainingDirection_Name", "assignedQualification_Name", "honors", "stateCommissionProtocol_Date", "graduateExpulsionOrder_Date", "diploma_status", "admission_Year", "graduation_Year", "passport", "student_signature", "management_signature"} };
+            string[,] nColimns = new string[,] { { "", "diploma_RN", "studName", "diplomaForm_SN", "diploma_supplement_form_SN", "diplomaIssue_Date", "trainingDirection_code", "trainingDirection_Name", "assignedQualification_Name", "honors", "stateCommissionProtocol_Date", "graduateExpulsionOrder_Date", "diploma_status", "admission_Year", "graduation_Year", "passport", "student_signature", "management_signature" } };
 
-            for (int i = 1; i< nColimns.Length-1; i++)
+            for (int i = 1; i < nColimns.Length - 1; i++)
                 sheet.Cells[1, i] = nColimns[0, i];
 
             crFile.Visible = true;
 
+        }
+
+        private void Form1_FormClosing(Object sender, FormClosingEventArgs e)
+        {
+            sqlConnection.Close();
         }
     }
 }

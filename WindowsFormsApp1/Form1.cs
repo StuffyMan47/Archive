@@ -17,10 +17,10 @@ using Excel = Microsoft.Office.Interop.Excel;
 
 namespace WindowsFormsApp1
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
         private SqlConnection sqlConnection = null;
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
         }
@@ -184,10 +184,10 @@ namespace WindowsFormsApp1
 
         //Чтение файла Excel
         private string excelFileName = string.Empty;
-
+        
         private DataTableCollection excelTableCollection = null;
 
-        private void открытьToolStripMenuItem_Click(object sender, EventArgs e)
+        private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
             sqlConnection.Open();
 

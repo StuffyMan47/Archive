@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp1
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -30,7 +30,7 @@
         {
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
+            this.create_file = new System.Windows.Forms.Button();
             this.WritingToTheDataBase_button = new System.Windows.Forms.Button();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
@@ -42,11 +42,11 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button2 = new System.Windows.Forms.Button();
+            this.sql_find = new System.Windows.Forms.Button();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.button3 = new System.Windows.Forms.Button();
+            this.st_button_refresh = new System.Windows.Forms.Button();
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
@@ -134,7 +134,7 @@
             // 
             // tabPage3
             // 
-            this.tabPage3.Controls.Add(this.button1);
+            this.tabPage3.Controls.Add(this.create_file);
             this.tabPage3.Controls.Add(this.WritingToTheDataBase_button);
             this.tabPage3.Controls.Add(this.dataGridView3);
             this.tabPage3.Controls.Add(this.toolStrip1);
@@ -148,13 +148,13 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(629, 24);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(112, 23);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Создать файл";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.create_file.Location = new System.Drawing.Point(629, 24);
+            this.create_file.Name = "button1";
+            this.create_file.Size = new System.Drawing.Size(112, 23);
+            this.create_file.TabIndex = 4;
+            this.create_file.Text = "Создать файл";
+            this.create_file.UseVisualStyleBackColor = true;
+            this.create_file.Click += new System.EventHandler(this.button1_Click);
             // 
             // WritingToTheDataBase_button
             // 
@@ -222,7 +222,7 @@
             this.открытьToolStripMenuItem.Name = "открытьToolStripMenuItem";
             this.открытьToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.открытьToolStripMenuItem.Text = "Открыть";
-            this.открытьToolStripMenuItem.Click += new System.EventHandler(this.открытьToolStripMenuItem_Click);
+            this.открытьToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // tabPage2
             // 
@@ -240,7 +240,7 @@
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Controls.Add(this.dataGridView1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.button2, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.sql_find, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.textBox4, 0, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
@@ -263,13 +263,13 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(3, 462);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(84, 36);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Поиск";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.sql_find.Location = new System.Drawing.Point(3, 462);
+            this.sql_find.Name = "button2";
+            this.sql_find.Size = new System.Drawing.Size(84, 36);
+            this.sql_find.TabIndex = 0;
+            this.sql_find.Text = "Поиск";
+            this.sql_find.UseVisualStyleBackColor = true;
+            this.sql_find.Click += new System.EventHandler(this.button2_Click);
             // 
             // textBox4
             // 
@@ -295,7 +295,7 @@
             // 
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Controls.Add(this.button3, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.st_button_refresh, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.dataGridView4, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
@@ -308,13 +308,13 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(3, 467);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(96, 32);
-            this.button3.TabIndex = 1;
-            this.button3.Text = "Обновление";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.st_button_refresh.Location = new System.Drawing.Point(3, 467);
+            this.st_button_refresh.Name = "button3";
+            this.st_button_refresh.Size = new System.Drawing.Size(96, 32);
+            this.st_button_refresh.TabIndex = 1;
+            this.st_button_refresh.Text = "Обновление";
+            this.st_button_refresh.UseVisualStyleBackColor = true;
+            this.st_button_refresh.Click += new System.EventHandler(this.button3_Click);
             // 
             // dataGridView4
             // 
@@ -1004,7 +1004,7 @@
         #endregion
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button create_file;
         private System.Windows.Forms.Button WritingToTheDataBase_button;
         private System.Windows.Forms.DataGridView dataGridView3;
         private System.Windows.Forms.ToolStrip toolStrip1;
@@ -1016,11 +1016,11 @@
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button sql_find;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button st_button_refresh;
         private System.Windows.Forms.DataGridView dataGridView4;
         private System.Windows.Forms.TabPage tabPage6;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;

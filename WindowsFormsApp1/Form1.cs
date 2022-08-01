@@ -51,7 +51,7 @@ namespace WindowsFormsApp1
 
             dataAdapter.Fill(db);
 
-            dataGridView2.DataSource = db.Tables[0];
+            dataGridView_Search.DataSource = db.Tables[0];
 
             sqlConnection.Close();
         }
@@ -111,14 +111,14 @@ namespace WindowsFormsApp1
         {
             sqlConnection.Open();
             SqlDataAdapter dataAdapter = new SqlDataAdapter(
-                textBox4.Text,
+                SQL_textBox.Text,
                 sqlConnection);
 
             DataSet dataSet = new DataSet();
 
             dataAdapter.Fill(dataSet);
 
-            dataGridView1.DataSource = dataSet.Tables[0];
+            dataGridView_SQL.DataSource = dataSet.Tables[0];
 
             sqlConnection.Close();
         }
@@ -128,14 +128,13 @@ namespace WindowsFormsApp1
             sqlConnection.Open();
 
             SqlDataAdapter dataAdapter = new SqlDataAdapter(
-                "SELECT * FROM KGEU_Diploma",
-                sqlConnection);
+                "SELECT * FROM KGEU_Diploma", sqlConnection);
 
             DataSet dataSet = new DataSet();
 
             dataAdapter.Fill(dataSet);
 
-            dataGridView4.DataSource = dataSet.Tables[0];
+            dataGridView_List.DataSource = dataSet.Tables[0];
 
             sqlConnection.Close();
         }
@@ -149,37 +148,37 @@ namespace WindowsFormsApp1
 
         private void diploma_RN_textBoxS_TextChanged(object sender, EventArgs e)
         {
-            (dataGridView2.DataSource as DataTable).DefaultView.RowFilter = string.Format($"diploma_RN LIKE '%{diploma_RN_textBoxS.Text}%' AND studName LIKE '%{stud_name_textBoxS.Text}%' AND trainingDirection_code LIKE '%{traningDC_textBoxS.Text}%' AND trainingDirection_Name LIKE '%{traningDN_textBoxS.Text}%' AND assignedQualification_Name LIKE '%{assignedQualification_Name_textBoxS.Text}%' AND passport LIKE '%{passport_textBoxS.Text}%'");
+            (dataGridView_Search.DataSource as DataTable).DefaultView.RowFilter = string.Format($"diploma_RN LIKE '%{diploma_RN_textBoxS.Text}%' AND studName LIKE '%{stud_name_textBoxS.Text}%' AND trainingDirection_code LIKE '%{traningDC_textBoxS.Text}%' AND trainingDirection_Name LIKE '%{traningDN_textBoxS.Text}%' AND assignedQualification_Name LIKE '%{assignedQualification_Name_textBoxS.Text}%' AND passport LIKE '%{passport_textBoxS.Text}%'");
         }
 
         private void stud_name_textBoxS_TextChanged(object sender, EventArgs e)
         {
-            (dataGridView2.DataSource as DataTable).DefaultView.RowFilter = string.Format($"diploma_RN LIKE '%{diploma_RN_textBoxS.Text}%' AND studName LIKE '%{stud_name_textBoxS.Text}%' AND trainingDirection_code LIKE '%{traningDC_textBoxS.Text}%' AND trainingDirection_Name LIKE '%{traningDN_textBoxS.Text}%' AND assignedQualification_Name LIKE '%{assignedQualification_Name_textBoxS.Text}%' AND passport LIKE '%{passport_textBoxS.Text}%'");
+            (dataGridView_Search.DataSource as DataTable).DefaultView.RowFilter = string.Format($"diploma_RN LIKE '%{diploma_RN_textBoxS.Text}%' AND studName LIKE '%{stud_name_textBoxS.Text}%' AND trainingDirection_code LIKE '%{traningDC_textBoxS.Text}%' AND trainingDirection_Name LIKE '%{traningDN_textBoxS.Text}%' AND assignedQualification_Name LIKE '%{assignedQualification_Name_textBoxS.Text}%' AND passport LIKE '%{passport_textBoxS.Text}%'");
         }
 
         private void traningDC_textBoxS_TextChanged(object sender, EventArgs e)
         {
-            (dataGridView2.DataSource as DataTable).DefaultView.RowFilter = string.Format($"diploma_RN LIKE '%{diploma_RN_textBoxS.Text}%' AND studName LIKE '%{stud_name_textBoxS.Text}%' AND trainingDirection_code LIKE '%{traningDC_textBoxS.Text}%' AND trainingDirection_Name LIKE '%{traningDN_textBoxS.Text}%' AND assignedQualification_Name LIKE '%{assignedQualification_Name_textBoxS.Text}%' AND passport LIKE '%{passport_textBoxS.Text}%'");
+            (dataGridView_Search.DataSource as DataTable).DefaultView.RowFilter = string.Format($"diploma_RN LIKE '%{diploma_RN_textBoxS.Text}%' AND studName LIKE '%{stud_name_textBoxS.Text}%' AND trainingDirection_code LIKE '%{traningDC_textBoxS.Text}%' AND trainingDirection_Name LIKE '%{traningDN_textBoxS.Text}%' AND assignedQualification_Name LIKE '%{assignedQualification_Name_textBoxS.Text}%' AND passport LIKE '%{passport_textBoxS.Text}%'");
         }
 
         private void traningDN_textBoxS_TextChanged(object sender, EventArgs e)
         {
-            (dataGridView2.DataSource as DataTable).DefaultView.RowFilter = string.Format($"diploma_RN LIKE '%{diploma_RN_textBoxS.Text}%' AND studName LIKE '%{stud_name_textBoxS.Text}%' AND trainingDirection_code LIKE '%{traningDC_textBoxS.Text}%' AND trainingDirection_Name LIKE '%{traningDN_textBoxS.Text}%' AND assignedQualification_Name LIKE '%{assignedQualification_Name_textBoxS.Text}%' AND passport LIKE '%{passport_textBoxS.Text}%'");
+            (dataGridView_Search.DataSource as DataTable).DefaultView.RowFilter = string.Format($"diploma_RN LIKE '%{diploma_RN_textBoxS.Text}%' AND studName LIKE '%{stud_name_textBoxS.Text}%' AND trainingDirection_code LIKE '%{traningDC_textBoxS.Text}%' AND trainingDirection_Name LIKE '%{traningDN_textBoxS.Text}%' AND assignedQualification_Name LIKE '%{assignedQualification_Name_textBoxS.Text}%' AND passport LIKE '%{passport_textBoxS.Text}%'");
         }
 
         private void assignedQualification_Name_textBoxS_TextChanged(object sender, EventArgs e)
         {
-            (dataGridView2.DataSource as DataTable).DefaultView.RowFilter = string.Format($"diploma_RN LIKE '%{diploma_RN_textBoxS.Text}%' AND studName LIKE '%{stud_name_textBoxS.Text}%' AND trainingDirection_code LIKE '%{traningDC_textBoxS.Text}%' AND trainingDirection_Name LIKE '%{traningDN_textBoxS.Text}%' AND assignedQualification_Name LIKE '%{assignedQualification_Name_textBoxS.Text}%' AND passport LIKE '%{passport_textBoxS.Text}%'");
+            (dataGridView_Search.DataSource as DataTable).DefaultView.RowFilter = string.Format($"diploma_RN LIKE '%{diploma_RN_textBoxS.Text}%' AND studName LIKE '%{stud_name_textBoxS.Text}%' AND trainingDirection_code LIKE '%{traningDC_textBoxS.Text}%' AND trainingDirection_Name LIKE '%{traningDN_textBoxS.Text}%' AND assignedQualification_Name LIKE '%{assignedQualification_Name_textBoxS.Text}%' AND passport LIKE '%{passport_textBoxS.Text}%'");
         }
 
         private void honors_comboBoxS_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            (dataGridView2.DataSource as DataTable).DefaultView.RowFilter = string.Format($"diploma_RN LIKE '%{diploma_RN_textBoxS.Text}%' AND studName LIKE '%{stud_name_textBoxS.Text}%' AND trainingDirection_code LIKE '%{traningDC_textBoxS.Text}%' AND trainingDirection_Name LIKE '%{traningDN_textBoxS.Text}%' AND assignedQualification_Name LIKE '%{assignedQualification_Name_textBoxS.Text}%' AND passport LIKE '%{passport_textBoxS.Text}%'");
+            (dataGridView_Search.DataSource as DataTable).DefaultView.RowFilter = string.Format($"diploma_RN LIKE '%{diploma_RN_textBoxS.Text}%' AND studName LIKE '%{stud_name_textBoxS.Text}%' AND trainingDirection_code LIKE '%{traningDC_textBoxS.Text}%' AND trainingDirection_Name LIKE '%{traningDN_textBoxS.Text}%' AND assignedQualification_Name LIKE '%{assignedQualification_Name_textBoxS.Text}%' AND passport LIKE '%{passport_textBoxS.Text}%'");
         }
 
         private void passport_textBoxS_TextChanged(object sender, EventArgs e)
         {
-            (dataGridView2.DataSource as DataTable).DefaultView.RowFilter = string.Format($"diploma_RN LIKE '%{diploma_RN_textBoxS.Text}%' AND studName LIKE '%{stud_name_textBoxS.Text}%' AND trainingDirection_code LIKE '%{traningDC_textBoxS.Text}%' AND trainingDirection_Name LIKE '%{traningDN_textBoxS.Text}%' AND assignedQualification_Name LIKE '%{assignedQualification_Name_textBoxS.Text}%' AND passport LIKE '%{passport_textBoxS.Text}%'");
+            (dataGridView_Search.DataSource as DataTable).DefaultView.RowFilter = string.Format($"diploma_RN LIKE '%{diploma_RN_textBoxS.Text}%' AND studName LIKE '%{stud_name_textBoxS.Text}%' AND trainingDirection_code LIKE '%{traningDC_textBoxS.Text}%' AND trainingDirection_Name LIKE '%{traningDN_textBoxS.Text}%' AND assignedQualification_Name LIKE '%{assignedQualification_Name_textBoxS.Text}%' AND passport LIKE '%{passport_textBoxS.Text}%'");
         }
 
         //Чтение файла Excel
@@ -211,7 +210,7 @@ namespace WindowsFormsApp1
                 MessageBox.Show(ex.Message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-            if (dataGridView3.Rows.Count > 2)
+            if (dataGridView_Excel.Rows.Count > 2)
                 WritingToTheDataBase_button.Enabled = true;
 
 
@@ -244,7 +243,7 @@ namespace WindowsFormsApp1
         private void toolStripComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             DataTable table = excelTableCollection[Convert.ToString(toolStripComboBox1.SelectedItem)];
-            dataGridView3.DataSource = table;
+            dataGridView_Excel.DataSource = table;
         }
 
         //Создание Excel файла и заполнение через dataGridView2 (вкладка поиск)
@@ -294,12 +293,12 @@ namespace WindowsFormsApp1
             rangeTable.EntireColumn.AutoFit();
 
             //Заполнение полей таблицы данными из БД
-            ws.Cells[6, 1] = dataGridView2[1, 0].Value.ToString();
-            ws.Cells[6, 2] = dataGridView2[12, 0].Value.ToString();
-            ws.Cells[6, 3] = dataGridView2[13, 0].Value.ToString();
-            ws.Cells[6, 4] = dataGridView2[9, 0].Value.ToString();
-            ws.Cells[6, 5] = dataGridView2[5, 0].Value.ToString();
-            ws.Cells[6, 6] = dataGridView2[6, 0].Value.ToString();
+            ws.Cells[6, 1] = dataGridView_Search[1, 0].Value.ToString();
+            ws.Cells[6, 2] = dataGridView_Search[12, 0].Value.ToString();
+            ws.Cells[6, 3] = dataGridView_Search[13, 0].Value.ToString();
+            ws.Cells[6, 4] = dataGridView_Search[9, 0].Value.ToString();
+            ws.Cells[6, 5] = dataGridView_Search[5, 0].Value.ToString();
+            ws.Cells[6, 6] = dataGridView_Search[6, 0].Value.ToString();
 
             excelApp.Visible = true;
         }
@@ -314,7 +313,7 @@ namespace WindowsFormsApp1
             SqlDataAdapter dataAdapter = new SqlDataAdapter("SELECT * FROM KGEU_Diploma", sqlConnection);
             DataSet db = new DataSet();
             dataAdapter.Fill(db);
-            dataGridView2.DataSource = db.Tables[0];
+            dataGridView_Search.DataSource = db.Tables[0];
 
             sqlConnection.Close();
         }
@@ -349,26 +348,26 @@ namespace WindowsFormsApp1
             int a = 0;
             try
             {
-                for (int i = 0; i < dataGridView3.Rows.Count - 1; i++)
+                for (int i = 1; i < dataGridView_Excel.Rows.Count - 1; i++)
                 {
                     a = i;
-                    command.Parameters["@diploma_RN"].Value = dataGridView3["diploma_RN", i].Value;
-                    command.Parameters["@studName"].Value = dataGridView3["studName", i].Value;
-                    command.Parameters["@diplomaForm_SN"].Value = dataGridView3["diplomaForm_SN", i].Value;
-                    command.Parameters["@diploma_supplement_form_SN"].Value = dataGridView3["diploma_supplement_form_SN", i].Value;
-                    command.Parameters["@diplomaIssue_Date"].Value = dataGridView3["diplomaIssue_Date", i].Value;
-                    command.Parameters["@trainingDirection_code"].Value = dataGridView3["trainingDirection_code", i].Value;
-                    command.Parameters["@trainingDirection_Name"].Value = dataGridView3["trainingDirection_Name", i].Value;
-                    command.Parameters["@assignedQualification_Name"].Value = dataGridView3["assignedQualification_Name", i].Value;
-                    command.Parameters["@honors"].Value = dataGridView3["honors", i].Value;
-                    command.Parameters["@stateCommissionProtocol_Date"].Value = dataGridView3["stateCommissionProtocol_Date", i].Value;
-                    command.Parameters["@graduateExpulsionOrder_Date"].Value = dataGridView3["graduateExpulsionOrder_Date", i].Value;
-                    command.Parameters["@diploma_status"].Value = dataGridView3["diploma_status", i].Value;
-                    command.Parameters["@admission_Year"].Value = dataGridView3["admission_Year", i].Value;
-                    command.Parameters["@graduation_Year"].Value = dataGridView3["graduation_Year", i].Value;
-                    command.Parameters["@passport"].Value = dataGridView3["passport", i].Value;
-                    command.Parameters["@student_signature"].Value = dataGridView3["student_signature", i].Value;
-                    command.Parameters["@management_signature"].Value = dataGridView3["management_signature", i].Value;
+                    command.Parameters["@diploma_RN"].Value = dataGridView_Excel["diploma_RN", i].Value;
+                    command.Parameters["@studName"].Value = dataGridView_Excel["studName", i].Value;
+                    command.Parameters["@diplomaForm_SN"].Value = dataGridView_Excel["diplomaForm_SN", i].Value;
+                    command.Parameters["@diploma_supplement_form_SN"].Value = dataGridView_Excel["diploma_supplement_form_SN", i].Value;
+                    command.Parameters["@diplomaIssue_Date"].Value = dataGridView_Excel["diplomaIssue_Date", i].Value;
+                    command.Parameters["@trainingDirection_code"].Value = dataGridView_Excel["trainingDirection_code", i].Value;
+                    command.Parameters["@trainingDirection_Name"].Value = dataGridView_Excel["trainingDirection_Name", i].Value;
+                    command.Parameters["@assignedQualification_Name"].Value = dataGridView_Excel["assignedQualification_Name", i].Value;
+                    command.Parameters["@honors"].Value = dataGridView_Excel["honors", i].Value;
+                    command.Parameters["@stateCommissionProtocol_Date"].Value = dataGridView_Excel["stateCommissionProtocol_Date", i].Value;
+                    command.Parameters["@graduateExpulsionOrder_Date"].Value = dataGridView_Excel["graduateExpulsionOrder_Date", i].Value;
+                    command.Parameters["@diploma_status"].Value = dataGridView_Excel["diploma_status", i].Value;
+                    command.Parameters["@admission_Year"].Value = dataGridView_Excel["admission_Year", i].Value;
+                    command.Parameters["@graduation_Year"].Value = dataGridView_Excel["graduation_Year", i].Value;
+                    command.Parameters["@passport"].Value = dataGridView_Excel["passport", i].Value;
+                    command.Parameters["@student_signature"].Value = dataGridView_Excel["student_signature", i].Value;
+                    command.Parameters["@management_signature"].Value = dataGridView_Excel["management_signature", i].Value;
                     command.ExecuteNonQuery();
                 }
 
@@ -376,7 +375,7 @@ namespace WindowsFormsApp1
             }
             catch
             {
-                object b = dataGridView3["diploma_RN", a].Value;
+                object b = dataGridView_Excel["diploma_RN", a].Value;
                 MessageBox.Show($"Человек с номером {b} уже существует в БД"); ;
             }
             finally
@@ -392,10 +391,19 @@ namespace WindowsFormsApp1
             crFile.Workbooks.Add();
             Excel.Worksheet sheet = (Excel.Worksheet)crFile.ActiveSheet;
 
-            string[,] nColimns = new string[,] { { "", "diploma_RN", "studName", "diplomaForm_SN", "diploma_supplement_form_SN", "diplomaIssue_Date", "trainingDirection_code", "trainingDirection_Name", "assignedQualification_Name", "honors", "stateCommissionProtocol_Date", "graduateExpulsionOrder_Date", "diploma_status", "admission_Year", "graduation_Year", "passport", "student_signature", "management_signature" } };
+            string[,] Heading_Eng = new string[,] { { "", "diploma_RN", "studName", "diplomaForm_SN", "diploma_supplement_form_SN", "diplomaIssue_Date", "trainingDirection_code", "trainingDirection_Name", "assignedQualification_Name", "honors", "stateCommissionProtocol_Date", "graduateExpulsionOrder_Date", "diploma_status", "admission_Year", "graduation_Year", "passport", "student_signature", "management_signature" } };
+            string[,] Heading_Ru = new string[,] { { "", "Регистрационный номер диплома", "ФИО студента", "Серия и номер бланка диплома", "Серия и номер бланка приложения к диплому", "Дата выдачи диплома", "Код направления подготовки", "Наименование направления подготовки", "Наименование присвоенной квалификации", "Диплом с отличием", "Дата и номер протокола государственной комиссии", "Дата и номер приказа об отчислении", "Статус диплома", "Год поступления", "Год выпуска", "Пасспортные данные", "Подпись студента", "Подпись руководителя" } };
+            
+            for (int i = 1; i < Heading_Eng.Length - 1; i++)
+            {
+                sheet.Cells[1, i] = Heading_Eng[0, i];
+                sheet.Cells[2, i] = Heading_Ru[0, i];
+            }
 
-            for (int i = 1; i < nColimns.Length - 1; i++)
-                sheet.Cells[1, i] = nColimns[0, i];
+            Excel.Range rangeHeading = crFile.get_Range("A1", "Q1");
+            rangeHeading.EntireColumn.AutoFit();
+            rangeHeading.VerticalAlignment = Excel.XlVAlign.xlVAlignCenter;
+            rangeHeading.HorizontalAlignment = Excel.XlVAlign.xlVAlignCenter;
 
             crFile.Visible = true;
 
